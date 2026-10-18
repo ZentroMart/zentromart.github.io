@@ -1,0 +1,7 @@
+.env
+.env.*
+!.env.example
+node_modules/
+deploy_to_github.bat
+deploy_to_github.ps1
+login_github.bat

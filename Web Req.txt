@@ -1,0 +1,799 @@
+PROJECT: ZentroMart — High-Performance Multi-Category E-Commerce Website
+
+Project Logo : C:\Users\murtu\OneDrive\Desktop\ZentroMart ZentroMart Logo
+Product are in : C:\Users\murtu\OneDrive\Desktop\ZentroMart\Products in these multiple folder have multiple product and some product have multiple images
+
+1. Project Overview
+
+Act as a Senior Full-Stack Software Architect, Expert Frontend Engineer, UI/UX Designer, SEO Specialist, and Web Performance Optimization Engineer.
+Build a complete, production-ready, modern, visually attractive, high-performance e-commerce website named **ZentroMart**.
+
+Business Name: ZentroMart
+Business Concept: Everything You Need, All in One Place.
+Business Type: Multi-Category Online Shopping Store
+Checkout Method: WhatsApp
+WhatsApp Number: +92 318 3085519
+WhatsApp International Format: +923183085519
+Currency: Pakistani Rupees (PKR)
+Hosting: GitHub Pages (Free Static Hosting)
+Backend: None
+Database: None
+Admin Dashboard: None
+Firebase / Firestore: Strictly prohibited.
+Primary Goal: Deliver a lightning-fast, mobile-first, professional e-commerce shopping experience using static hosting only.
+The website must be fully compatible with GitHub Pages and require no server-side execution.
+
+2. Technology Stack
+Use:
+- HTML5 with semantic structure
+- CSS3 with modern responsive styling
+- Vanilla JavaScript (ES6+)
+- JSON files for product and category data
+- CSS Grid and Flexbox
+- Native browser APIs
+- LocalStorage for cart and wishlist
+- Intersection Observer for lazy loading
+- WebP / AVIF images where supported
+- SVG icons
+- GitHub Pages for deployment
+
+Avoid:
+
+- Firebase
+- Firestore
+- SQL / NoSQL databases
+- Node.js servers
+- Express.js
+- PHP
+- Server-side APIs
+- Paid hosting services
+- Unnecessary frameworks
+- Heavy UI libraries
+- jQuery
+- Unnecessary third-party dependencies
+
+Use a lightweight, maintainable architecture.
+Node.js may be used locally for optional development/build scripts, but the deployed website must consist entirely of static assets and must not require Node.js at runtime.
+
+
+3. Design Requirements
+Create a premium, modern shopping interface inspired by the usability of leading e-commerce platforms, while maintaining an original ZentroMart identity.
+Visual Theme
+
+- Professional, elegant, trustworthy design
+- Clean white or soft-neutral backgrounds
+- Deep navy and modern teal/emerald accent colors
+- Attractive promotional banners
+- Premium typography
+- Consistent spacing
+- Smooth, subtle transitions
+- Beautiful product cards
+- Rounded corners
+- Lightweight shadows
+- Excellent visual hierarchy
+- Mobile-first responsive layout
+
+Create a consistent design system using CSS variables.
+
+Responsive Layout
+
+Support:
+
+- Small mobile devices
+- Standard smartphones
+- Tablets
+- Laptops
+- Desktop monitors
+- Large desktop screens
+
+Suggested product grid:
+
+- Mobile: 2 products per row
+- Tablet: 3 products per row
+- Desktop: 4 products per row
+- Large desktop: 5 products per row where appropriate
+
+Avoid horizontal scrolling and layout overflow.
+
+
+4. Website Pages
+
+Create the following pages and views:
+
+Home Page
+
+Include:
+
+- Top promotional announcement bar
+- ZentroMart logo
+- Sticky navigation header
+- Product search
+- Category navigation
+- Shopping cart icon with item count
+- Wishlist icon
+- Hero promotional section
+- Shop by Category
+- Featured Products
+- New Arrivals
+- Best Sellers
+- Promotional Offers
+- Why Shop With ZentroMart
+- WhatsApp customer support
+- Newsletter-style promotional information without requiring a backend
+- Professional footer
+
+All sections must load efficiently.
+Shop / All Products
+
+Include:
+
+- Product listing
+- Search
+- Category filters
+- Price range filters
+- Sort by price
+- Sort by name
+- Sort by newest
+- Sort by popularity using manually supplied ranking data
+- Pagination
+- Product count
+- Clear filters
+- Empty-result state
+
+Product Details
+
+Include:
+
+- Product title
+- Multiple product images
+- Main product image
+- Thumbnail gallery
+- Previous/next image navigation
+- Product price
+- Optional original price
+- Discount badge
+- Availability status
+- SKU
+- Category
+- Product description
+- Product specifications
+- Quantity selector
+- Add to Cart
+- Buy Now on WhatsApp
+- Wishlist button
+- Related Products
+- Mobile-friendly image gallery
+
+Additional Pages
+
+Create:
+
+- About Us
+- Contact Us
+- Shopping Cart
+- Wishlist
+- Shipping Information
+- Return & Exchange Policy
+- Privacy Policy
+- Terms & Conditions
+- FAQ
+
+Use editable placeholders for policies and business details that have not been supplied. Do not invent legal commitments, delivery charges, return periods, or contact addresses.
+
+5. Product Data Architecture
+
+All products must be stored in local JSON files.
+
+Example:
+
+```json
+{
+  "id": "ZM-0001",
+  "slug": "premium-wireless-headphones",
+  "name": "Premium Wireless Headphones",
+  "category": "Electronics",
+  "subcategory": "Audio",
+  "price": 4500,
+  "originalPrice": 5500,
+  "currency": "PKR",
+  "description": "High-quality wireless headphones.",
+  "images": [
+    "assets/products/ZM-0001/01.webp",
+    "assets/products/ZM-0001/02.webp",
+    "assets/products/ZM-0001/03.webp",
+    "assets/products/ZM-0001/04.webp"
+  ],
+  "stockStatus": "in-stock",
+  "featured": true,
+  "bestSeller": false,
+  "newArrival": true,
+  "popularityRank": 25,
+  "createdAt": "2026-10-16",
+  "specifications": {
+    "Color": "Black",
+    "Connectivity": "Bluetooth"
+  }
+}
+```
+
+Requirements:
+
+1. Every product must have a unique ID.
+2. Every product must have a unique URL slug.
+3. Each product must support multiple images.
+4. Products may have different numbers of images.
+5. Missing images must display a placeholder.
+6. Images must preserve aspect ratio.
+7. Products must support categories and subcategories.
+8. Product data must be easily editable.
+9. No database or backend should be required.
+10. Product links must be shareable and bookmarkable.
+
+Use product identifiers for cart persistence, not full product objects.
+
+Validate product records and handle invalid or missing fields gracefully.
+
+6. Product Image Management
+
+Use the following structure:
+
+```text
+assets/
+  products/
+    ZM-0001/
+      01.webp
+      02.webp
+      03.webp
+      04.webp
+    ZM-0002/
+      01.webp
+      02.webp
+      03.webp
+    ZM-0003/
+      01.webp
+      02.webp
+```
+
+Image requirements:
+
+- Support unlimited image entries in the data model.
+- Load only necessary images.
+- Use lazy loading for below-the-fold images.
+- Use responsive image sizes.
+- Use WebP or AVIF where practical.
+- Set explicit image dimensions to reduce layout shifts.
+- Optimize thumbnails.
+- Load the main product image with appropriate priority.
+- Never load all gallery images at full resolution unnecessarily.
+- Use lightweight CSS transitions.
+- Provide image fallback handling.
+- Avoid stretching or distorted images.
+
+Include an optional local image optimization script for generating thumbnails and responsive image sizes before deployment.
+
+
+7. Pagination — Exactly 25 Products Per Page
+
+Implement efficient client-side pagination.
+
+Critical requirement: Display a maximum of 25 products per page.
+
+Examples:
+
+- 1–25: Page 1
+- 26–50: Page 2
+- 51–75: Page 3
+- 76–100: Page 4
+
+Pagination must support:
+
+- Previous
+- Next
+- Page numbers
+- Active page indication
+- Disabled controls
+- First and last page when appropriate
+- URL query parameters
+- Browser back/forward navigation
+- Keyboard accessibility
+- Smooth scrolling to product listing
+
+Example:
+
+```text
+shop.html?page=1
+shop.html?page=2
+shop.html?page=3
+```
+
+Filtering and sorting must happen before pagination.
+When a filter or search changes, reset pagination to page 1.
+Do not render hundreds of product cards into the DOM simultaneously.
+Render only the 25 products belonging to the active page.
+For large catalogs, support pre-generated JSON chunks or category indexes so the browser does not need to download the entire catalog before showing products.
+
+8. Advanced Product Search
+Implement fast, client-side search.
+Features:
+
+- Search by product name
+- Search by SKU
+- Search by category
+- Search by keywords
+- Search suggestions
+- Debounced input
+- Clear search
+- No-results message
+- Keyboard navigation for suggestions
+- Accessible search controls
+
+Search must work without a backend.
+
+For large product catalogs, use a lightweight pre-generated search index.
+
+Avoid expensive full-catalog operations on every keystroke.
+
+
+9. Shopping Cart System
+Create a complete frontend shopping cart.
+
+Features:
+
+- Add product to cart
+- Remove product
+- Increase quantity
+- Decrease quantity
+- Update quantity
+- Cart badge
+- Cart subtotal
+- Cart total
+- Empty cart state
+- Persistent cart with LocalStorage
+- Responsive cart drawer or dedicated cart page
+- WhatsApp checkout
+
+Cart data should contain product IDs and quantities.
+Read current product names from the catalog.
+Do not allow invalid quantities.
+Out-of-stock products must not be available for checkout.
+
+10. WhatsApp Checkout Integration
+
+WhatsApp Number: +92 318 3085519
+
+Use:
+
+```text
+https://wa.me/923183085519
+```
+
+Buy Now Button
+
+Each product must have a Buy Now on WhatsApp button.
+
+Example message:
+
+```text
+Hello ZentroMart!
+
+I would like to order:
+
+Product: Premium Wireless Headphones
+Product ID: ZM-0001
+Quantity: 1
+
+
+Please confirm availability and delivery details.
+```
+
+Complete Cart Checkout
+
+When a customer clicks Checkout on WhatsApp, generate a message containing:
+
+- ZentroMart greeting
+- All cart items
+- Product names
+- Product IDs
+- Quantities
+- Item subtotals
+- Grand total
+- Request for delivery confirmation
+- Never add price
+- Add tag 20 percent off o all product
+
+Example:
+
+```text
+Hello ZentroMart!
+
+I would like to place an order.
+
+ORDER DETAILS
+
+1. Premium Wireless Headphones
+SKU: ZM-0001
+Qty: 2
+- Never add price
+- Add tag 20 percent off o all product
+
+2. Smart Watch
+SKU: ZM-0002
+Qty: 1
+- Never add price
+- Add tag 20 percent off o all product
+
+
+
+Please confirm availability, delivery charges and payment options.
+
+Thank you!
+```
+
+### WhatsApp Implementation
+
+Use `encodeURIComponent()`.
+
+```javascript
+const WHATSAPP_NUMBER = "923183085519";
+
+function openWhatsAppCheckout(message) {
+  const url =
+    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+```
+
+Additional requirements:
+
+- Work on Android, iPhone and desktop.
+- Open WhatsApp or WhatsApp Web as supported by the device.
+- Never require a backend.
+- Show an order summary before redirecting.
+- Do not automatically clear the cart on redirect.
+- Do not claim the order was placed or paid simply because WhatsApp opened.
+- For unusually long cart messages, warn the customer and provide a practical fallback.
+
+---
+
+11. Categories
+
+Support dynamic categories loaded from JSON.
+
+Example categories:
+
+- Electronics
+- Fashion
+- Beauty & Personal Care
+- Home & Kitchen
+- Groceries
+- Mobile Accessories
+- Toys & Games
+- Sports & Fitness
+- Bags & Accessories
+- Home Appliances
+- Office & Stationery
+- Automotive Accessories
+- Baby Products
+- General Merchandise
+
+Each category must have:
+
+- Unique ID
+- Name
+- Slug
+- Optional image
+- Optional icon
+- Product count derived from product data
+
+Do not hardcode category names throughout the JavaScript.
+
+Adding a new category should require editing only the appropriate JSON data.
+
+---
+12. Performance Optimization — Highest Priority
+
+The website must be extremely fast, lightweight and responsive.
+
+Performance objectives:
+
+- Lighthouse Performance: Target 95+
+- Lighthouse Accessibility: Target 95+
+- Lighthouse Best Practices: Target 95+
+- Lighthouse SEO: Target 95+
+- Minimal JavaScript bundle
+- Minimal CSS bundle
+- Minimal network requests
+- Excellent Core Web Vitals
+
+These are optimization targets, not guaranteed scores.
+
+Required Optimizations
+
+1. Minify production CSS and JavaScript.
+2. Defer noncritical scripts.
+3. Avoid render-blocking dependencies.
+4. Lazy-load product images.
+5. Use optimized responsive images.
+6. Prioritize the largest above-the-fold image.
+7. Avoid unnecessary DOM updates.
+8. Use event delegation.
+9. Cache already-loaded catalog chunks in memory.
+10. Prevent repeated JSON fetching.
+11. Avoid unnecessary reflows.
+12. Use CSS containment where beneficial.
+13. Reserve space for images.
+14. Avoid heavy animation libraries.
+15. Avoid unnecessary external fonts.
+16. Use system fonts where appropriate.
+17. Use passive listeners for scrolling where appropriate.
+18. Keep navigation smooth.
+19. Use lightweight skeleton placeholders.
+20. Test on low-end Android devices and slow networks.
+
+Do not preload the entire catalog or every product image.
+
+Use progressive enhancement where possible.
+
+---
+
+13. SEO Optimization
+
+Implement:
+
+- Unique page titles
+- Meta descriptions
+- Canonical URLs
+- Open Graph metadata
+- Twitter/X preview metadata
+- Product structured data
+- Breadcrumb structured data
+- Semantic HTML
+- Descriptive image alt text
+- robots.txt
+- sitemap.xml
+- Clean, shareable product links
+
+Because this is a static GitHub Pages website, create a local build-time generator that can produce static product detail pages and sitemap entries from the JSON catalog.
+
+Do not rely solely on JavaScript rendering for search-engine discovery of individual products.
+
+Use correct production URLs after the GitHub Pages repository address is configured.
+
+---
+
+14. Accessibility
+
+Implement:
+
+- Semantic landmarks
+- Proper headings
+- Accessible buttons
+- Visible focus indicators
+- Keyboard navigation
+- Screen-reader labels
+- Accessible cart notifications
+- Sufficient color contrast
+- Responsive text
+- Reduced-motion support
+- Accessible pagination
+- Accessible product image gallery
+- Proper form labels
+
+Do not sacrifice accessibility for visual design.
+
+---
+
+15. Suggested Project Structure
+
+```text
+ZentroMart/
+│
+├── index.html
+├── shop.html
+├── product.html
+├── cart.html
+├── wishlist.html
+├── about.html
+├── contact.html
+├── shipping.html
+├── returns.html
+├── privacy.html
+├── terms.html
+├── faq.html
+├── 404.html
+├── .nojekyll
+├── robots.txt
+├── sitemap.xml
+│
+├── assets/
+│   ├── css/
+│   │   ├── main.css
+│   │   ├── responsive.css
+│   │   └── components.css
+│   │
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── products.js
+│   │   ├── search.js
+│   │   ├── filters.js
+│   │   ├── pagination.js
+│   │   ├── cart.js
+│   │   ├── wishlist.js
+│   │   ├── whatsapp.js
+│   │   ├── gallery.js
+│   │   └── utils.js
+│   │
+│   ├── images/
+│   │   ├── logo.svg
+│   │   ├── hero.webp
+│   │   └── placeholder.webp
+│   │
+│   └── products/
+│       ├── ZM-0001/
+│       ├── ZM-0002/
+│       └── ZM-0003/
+│
+├── data/
+│   ├── products.json
+│   ├── categories.json
+│   ├── featured.json
+│   └── catalog/
+│       ├── manifest.json
+│       └── chunks/
+│
+├── scripts/
+│   ├── build-catalog.mjs
+│   ├── generate-pages.mjs
+│   └── optimize-images.mjs
+│
+└── README.md
+```
+
+The scripts are optional local build tools, not server-side runtime services.
+
+Use one canonical product data source and generate derived catalog files to avoid data duplication.
+
+---
+
+16. GitHub Pages Deployment
+
+Ensure the complete website works on GitHub Pages.
+
+Requirements:
+
+- Correct relative asset paths
+- No broken images
+- No broken navigation
+- No server-side routing dependencies
+- Correct direct product links
+- Functional pagination query parameters
+- Correct handling of browser refresh
+- Compatible with GitHub Pages static hosting
+- No environment secrets required
+
+If build scripts are used, provide a GitHub Actions workflow to generate the static site and publish it to GitHub Pages.
+
+Do not require Firebase, external databases, or paid infrastructure.
+
+Provide complete deployment instructions in README.md.
+
+
+17. Customer Experience Features
+
+Implement:
+
+- Sticky responsive navigation
+- Mobile navigation menu
+- Mobile bottom navigation where useful
+- Floating WhatsApp support button
+- Wishlist
+- Shopping cart
+- Recently viewed products using LocalStorage
+- Product availability labels
+- Sale badges
+- Discount percentage display
+- Related product recommendations
+- Toast notifications
+- Back-to-top button
+- Breadcrumb navigation
+- Fast product filtering
+- Search suggestions
+- Loading skeletons
+- Attractive empty states
+- Responsive footer
+
+All features must work without user registration.
+
+
+18. Security and Reliability
+
+Even though the website is static:
+
+- Never use `eval()`.
+- Avoid unsafe `innerHTML` with untrusted values.
+- Escape or safely render product text.
+- Validate numeric quantities and prices can be delivered from WhatsApp.
+- Validate JSON data.
+- Handle missing product IDs.
+- Handle invalid URLs.
+- Prevent broken product routes.
+- Never store sensitive payment information.
+- Do not expose API secrets.
+- Do not create fake authentication.
+- Do not pretend that LocalStorage is a secure database.
+
+Prices are not shown on the website are informational and must be confirmed by the seller through WhatsApp after order
+
+
+19. Product Maintenance Without Admin Dashboard
+
+There must be no admin panel.
+To add a product:
+
+1. Create a new product folder.
+2. Add optimized product images.
+3. Add a new product entry in products.json.
+4. Commit and push changes to GitHub.
+5. Let GitHub Pages publish the updated website.
+
+To update a product:
+
+- Edit the corresponding JSON record.
+- Replace or add images if necessary.
+- Commit and push.
+
+To remove a product:
+
+- Remove its JSON entry.
+- Rebuild generated catalog and product pages.
+- Commit and push.
+
+Document this workflow clearly.
+Create sample products across several categories to demonstrate the system.
+Do not fill the final website with hundreds of fake products.
+
+
+20. Final Deliverables
+
+Generate the complete working application, not just design mockups.
+Deliver:
+
+1. Fully responsive ZentroMart website.
+2. Functional multi-category product catalog.
+3. Multi-image product galleries.
+4. Product search.
+5. Category and price filters.
+6. Pagination after exactly 25 products.
+7. Shopping cart using LocalStorage.
+8. Wishlist using LocalStorage.
+9. WhatsApp checkout to +92 318 3085519.
+10. GitHub Pages deployment compatibility.
+11. SEO-friendly static product pages.
+12. Optimized image loading.
+13. Professional homepage.
+14. All supporting informational pages.
+15. Sample product JSON data.
+16. Complete README.md.
+17. Optional automated static build workflow.
+
+Acceptance Tests
+
+Verify:
+
+- Search results paginate correctly.
+- Filters reset pagination appropriately.
+- Product image galleries support multiple images.
+- Cart survives page refresh.
+- WhatsApp checkout correctly encodes multiple items.
+- Product URLs work after direct navigation and refresh.
+- Both root-domain and repository-subpath deployment work.
+- No Firebase or backend calls are made.
+- Mobile layout works without horizontal overflow.
+- Invalid products and missing images fail gracefully.
+
+FINAL INSTRUCTION
+Build ZentroMart as a complete, fast, scalable, professional static e-commerce website suitable for real customers.
+Prioritize performance, clean architecture, usability, maintainability, SEO, and GitHub Pages compatibility.
+Do not introduce a backend, database, Firebase, Firestore, admin dashboard, or unnecessary third-party service.
+Start by implementing the project structure and core shopping experience, then complete all pages, test functionality, optimize performance, and prepare the production deployment.

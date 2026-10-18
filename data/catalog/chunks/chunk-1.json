@@ -1,0 +1,613 @@
+[
+  {
+    "id": "ZM-0001",
+    "slug": "al-hafiz-chakki-atta-whole-wheat-flour",
+    "name": "Al Hafiz Chakki Atta (Whole Wheat Flour) 10kg",
+    "category": "Flours & Grains",
+    "categorySlug": "flours-grains",
+    "subcategory": "Flour",
+    "price": 1440,
+    "originalPrice": 1800,
+    "currency": "PKR",
+    "description": "100% pure stone-ground whole wheat chakki atta packed with dietary fiber, natural bran, and essential nutrients.",
+    "images": [
+      "Products/1. Al Hafiz Atta Chakki/1. Al Hafiz Aata Chakki.jpg",
+      "Products/1. Al Hafiz Atta Chakki/2. Al Hafiz Aata Chakki.jpg",
+      "Products/1. Al Hafiz Atta Chakki/3. Al Hafiz Aata Chakki.jpg",
+      "Products/1. Al Hafiz Atta Chakki/4. Al Hafiz Aata Chakki.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 98,
+    "createdAt": "2026-10-10",
+    "specifications": {
+      "Brand": "Al Hafiz",
+      "Weight": "10 KG",
+      "Type": "Stone-ground Chakki Atta"
+    }
+  },
+  {
+    "id": "ZM-0002",
+    "slug": "al-hafiz-channa-daal-besan-gram-flour",
+    "name": "Al Hafiz Channa Daal Besan (Gram Flour) 1kg",
+    "category": "Flours & Grains",
+    "categorySlug": "flours-grains",
+    "subcategory": "Besan & Pulses Flour",
+    "price": 320,
+    "originalPrice": 400,
+    "currency": "PKR",
+    "description": "Finely ground pure gram flour made from premium roasted channa daal. Excellent for crispy pakoras and mithai.",
+    "images": [
+      "Products/2. Al Hafiz Channa Daal Besan/1. Al Hafiz Channa Daal Besan.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 88,
+    "createdAt": "2026-10-11",
+    "specifications": {
+      "Brand": "Al Hafiz",
+      "Weight": "1 KG"
+    }
+  },
+  {
+    "id": "ZM-0003",
+    "slug": "al-hafiz-dhaniya-powder-coriander-250g",
+    "name": "Al Hafiz Pure Coriander Powder (Dhaniya) 250g",
+    "category": "Spices & Seasonings",
+    "categorySlug": "spices-seasonings",
+    "subcategory": "Ground Spices",
+    "price": 200,
+    "originalPrice": 250,
+    "currency": "PKR",
+    "description": "Aromatic, cold-milled coriander seed powder with earthy notes and natural essential oils.",
+    "images": [
+      "Products/3. Al Hafiz Dhaniya Powder/1. Al Hafiz Dhaniya Powder.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 75,
+    "createdAt": "2026-10-12",
+    "specifications": {
+      "Brand": "Al Hafiz",
+      "Weight": "250 Grams"
+    }
+  },
+  {
+    "id": "ZM-0004",
+    "slug": "al-hafiz-haldi-powder-turmeric-250g",
+    "name": "Al Hafiz Pure Turmeric Powder (Haldi) 250g",
+    "category": "Spices & Seasonings",
+    "categorySlug": "spices-seasonings",
+    "subcategory": "Ground Spices",
+    "price": 220,
+    "originalPrice": 275,
+    "currency": "PKR",
+    "description": "Vibrant golden turmeric powder with high natural curcumin content.",
+    "images": [
+      "Products/4. Al Hafiz Haldi Powder/1. Al Hafiz Haldi Powder.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 92,
+    "createdAt": "2026-10-12",
+    "specifications": {
+      "Brand": "Al Hafiz",
+      "Weight": "250 Grams"
+    }
+  },
+  {
+    "id": "ZM-0005",
+    "slug": "al-hafiz-kuti-lal-mirch-chilli-flakes-250g",
+    "name": "Al Hafiz Crushed Red Chilli Flakes (Kuti Lal Mirch) 250g",
+    "category": "Spices & Seasonings",
+    "categorySlug": "spices-seasonings",
+    "subcategory": "Chilli & Pepper",
+    "price": 260,
+    "originalPrice": 325,
+    "currency": "PKR",
+    "description": "Bold and fiery crushed red peppers with seeds intact for optimal heat and zesty punch.",
+    "images": [
+      "Products/5. Al Hafiz Kuti Lal Mirch/1. Al Hafiz Kuti Lal Mirch.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 89,
+    "createdAt": "2026-10-13",
+    "specifications": {
+      "Brand": "Al Hafiz",
+      "Weight": "250 Grams"
+    }
+  },
+  {
+    "id": "ZM-0006",
+    "slug": "al-hafiz-pesi-lal-mirch-chilli-powder-250g",
+    "name": "Al Hafiz Pure Red Chilli Powder (Pesi Lal Mirch) 250g",
+    "category": "Spices & Seasonings",
+    "categorySlug": "spices-seasonings",
+    "subcategory": "Ground Spices",
+    "price": 280,
+    "originalPrice": 350,
+    "currency": "PKR",
+    "description": "Fine, unadulterated red chilli powder delivering brilliant natural red hue and balanced piquant spice.",
+    "images": [
+      "Products/6. Al Hafiz Pesi Lal Mirch/1. Al Hafiz Pesi Lal Mirch.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 85,
+    "createdAt": "2026-10-13",
+    "specifications": {
+      "Brand": "Al Hafiz",
+      "Weight": "250 Grams"
+    }
+  },
+  {
+    "id": "ZM-0007",
+    "slug": "premium-dried-aloo-bukhara-irani-plum-250g",
+    "name": "Premium Dried Aloo Bukhara Irani (Plum Irani) 250g",
+    "category": "Dry Fruits & Specialties",
+    "categorySlug": "dry-fruits-specialties",
+    "subcategory": "Dried Fruits",
+    "price": 440,
+    "originalPrice": 550,
+    "currency": "PKR",
+    "description": "Plump, sun-dried Irani sour plums (Aloo Bukhara). Essential secret ingredient for authentic Karachi Biryani.",
+    "images": [
+      "Products/7. Aloo Bukhara Irani (Plum Irani)/1. Allo Bukhara Qandhari.webp"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": true,
+    "popularityRank": 94,
+    "createdAt": "2026-10-14",
+    "specifications": {
+      "Origin": "Iran",
+      "Weight": "250 Grams"
+    }
+  },
+  {
+    "id": "ZM-0008",
+    "slug": "pure-baking-soda-food-grade-50g",
+    "name": "Pure Baking Soda 50g (Food Grade)",
+    "category": "Baking & Cooking",
+    "categorySlug": "baking-cooking",
+    "subcategory": "Leavening Agents",
+    "price": 60,
+    "originalPrice": 75,
+    "currency": "PKR",
+    "description": "High-purity sodium bicarbonate for fluffy cakes, tenderizing meat, and kitchen essentials.",
+    "images": [
+      "Products/8. Bakking Soda 50 GM/Bakking Soda 50 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 68,
+    "createdAt": "2026-10-14",
+    "specifications": {
+      "Weight": "50 Grams"
+    }
+  },
+  {
+    "id": "ZM-0009",
+    "slug": "special-biryani-food-essence-50ml",
+    "name": "Special Biryani Food Essence 50ml",
+    "category": "Food Flavors & Essences",
+    "categorySlug": "food-flavors-essences",
+    "subcategory": "Aroma & Essences",
+    "price": 140,
+    "originalPrice": 175,
+    "currency": "PKR",
+    "description": "Concentrated Karachi degi biryani aroma essence for restaurant-style fragrance.",
+    "images": [
+      "Products/9. Biryani Essence 50 ML/1. Biryani Essence 50 ML.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 96,
+    "createdAt": "2026-10-14",
+    "specifications": {
+      "Volume": "50 ML"
+    }
+  },
+  {
+    "id": "ZM-0010",
+    "slug": "ready-to-eat-tangy-channa-chaat-special-bowl",
+    "name": "Ready-to-Eat Tangy Channa Chaat Special Bowl",
+    "category": "Frozen & Ready to Eat",
+    "categorySlug": "frozen-ready-to-eat",
+    "subcategory": "Ready Meals",
+    "price": 280,
+    "originalPrice": 350,
+    "currency": "PKR",
+    "description": "Traditional Karachi-style tangy channa chaat infused with imli chutney and crisp salad.",
+    "images": [
+      "Products/10. Channa Chaat/1. Channa Chaat.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 82,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Portion": "350g Bowl"
+    }
+  },
+  {
+    "id": "ZM-0011",
+    "slug": "crispy-chicken-donuts-1-dozen-12-pcs",
+    "name": "Crispy Chicken Donuts (1 Dozen / 12 Pcs Pack)",
+    "category": "Frozen & Ready to Eat",
+    "categorySlug": "frozen-ready-to-eat",
+    "subcategory": "Frozen Snacks",
+    "price": 960,
+    "originalPrice": 1200,
+    "currency": "PKR",
+    "description": "Crunchy breadcrumb coated chicken donuts seasoned with herbs and cheese seasoning.",
+    "images": [
+      "Products/11. Chicken Donuts 1 Dozen/1. Chicken Donuts 1 Dozen.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": true,
+    "popularityRank": 95,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Quantity": "12 Pieces"
+    }
+  },
+  {
+    "id": "ZM-0012",
+    "slug": "premium-corn-flour-starch-100g",
+    "name": "Premium Corn Flour / Starch 100g",
+    "category": "Baking & Cooking",
+    "categorySlug": "baking-cooking",
+    "subcategory": "Thickeners",
+    "price": 80,
+    "originalPrice": 100,
+    "currency": "PKR",
+    "description": "Silky-smooth white corn starch ideal for thickening soups, gravies, and desserts.",
+    "images": [
+      "Products/12. CORN FLOOR 100 GM/CORN FLOOR 100 GM.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 71,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "100 Grams"
+    }
+  },
+  {
+    "id": "ZM-0013",
+    "slug": "premium-quality-daal-mash-washed-urad-250g",
+    "name": "Premium Quality Daal Mash (Washed Urad) 250g",
+    "category": "Pulses & Lentils",
+    "categorySlug": "pulses-lentils",
+    "subcategory": "Lentils",
+    "price": 140,
+    "originalPrice": 175,
+    "currency": "PKR",
+    "description": "Triple-cleaned, polished white Daal Mash for dhaba-style bhuni daal.",
+    "images": [
+      "Products/13. DAAL MASH 250 GM/DAAL MASH 250 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 86,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "250 Grams"
+    }
+  },
+  {
+    "id": "ZM-0014",
+    "slug": "clean-pure-daal-masoor-red-lentils-250g",
+    "name": "Clean & Pure Daal Masoor (Red Lentils) 250g",
+    "category": "Pulses & Lentils",
+    "categorySlug": "pulses-lentils",
+    "subcategory": "Lentils",
+    "price": 110,
+    "originalPrice": 140,
+    "currency": "PKR",
+    "description": "Fast-cooking split red lentils loaded with protein, iron, and fiber.",
+    "images": [
+      "Products/14. DAAL MASOOR 250 GM/DAAL MASOOR 250 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 84,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "250 Grams"
+    }
+  },
+  {
+    "id": "ZM-0015",
+    "slug": "pure-daal-moong-dhuli-yellow-lentils-250g",
+    "name": "Pure Daal Moong Dhuli (Yellow Lentils) 250g",
+    "category": "Pulses & Lentils",
+    "categorySlug": "pulses-lentils",
+    "subcategory": "Lentils",
+    "price": 120,
+    "originalPrice": 150,
+    "currency": "PKR",
+    "description": "Light, easily digestible yellow split moong daal for khichdi and comforting dal bowls.",
+    "images": [
+      "Products/15. DAAL MOONG 250 GM/DAAL MOONG 250 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 80,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "250 Grams"
+    }
+  },
+  {
+    "id": "ZM-0016",
+    "slug": "aromatic-cinnamon-sticks-daar-cheeni-50g",
+    "name": "Aromatic Cinnamon Sticks (Daar Cheeni) 50g",
+    "category": "Spices & Seasonings",
+    "categorySlug": "spices-seasonings",
+    "subcategory": "Whole Spices",
+    "price": 130,
+    "originalPrice": 165,
+    "currency": "PKR",
+    "description": "Selected sweet-scented cinnamon bark sticks for biryani tarka, chai, and baking.",
+    "images": [
+      "Products/16. DAAR CHEENI 50 Gram/1. DAAR CHEENI 50 Gram.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 77,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "50 Grams"
+    }
+  },
+  {
+    "id": "ZM-0017",
+    "slug": "farm-fresh-daal-channa-split-bengal-gram-250g",
+    "name": "Farm Fresh Daal Channa (Split Bengal Gram) 250g",
+    "category": "Pulses & Lentils",
+    "categorySlug": "pulses-lentils",
+    "subcategory": "Lentils",
+    "price": 95,
+    "originalPrice": 120,
+    "currency": "PKR",
+    "description": "Firm-textured, nutty-flavored split channa lentils for traditional Daal Gosht.",
+    "images": [
+      "Products/17. Dal Channa 250 GM/Dal Channa 250 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 87,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "250 Grams"
+    }
+  },
+  {
+    "id": "ZM-0018",
+    "slug": "organic-pure-turmeric-powder-250g-pack",
+    "name": "Organic Pure Turmeric Powder 250g",
+    "category": "Spices & Seasonings",
+    "categorySlug": "spices-seasonings",
+    "subcategory": "Ground Spices",
+    "price": 210,
+    "originalPrice": 265,
+    "currency": "PKR",
+    "description": "Natural sun-dried haldi powder with rich golden tone and earthy aroma.",
+    "images": [
+      "Products/18. Haldi Powder Turmeric Powder 250 Gram/1. Haldi Powder Turmeric Powder 250.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 79,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "250 Grams"
+    }
+  },
+  {
+    "id": "ZM-0019",
+    "slug": "big-grain-kabuli-channa-white-chickpeas-250g",
+    "name": "Big Grain Kabuli Channa (White Chickpeas) 250g",
+    "category": "Pulses & Lentils",
+    "categorySlug": "pulses-lentils",
+    "subcategory": "Chickpeas & Beans",
+    "price": 135,
+    "originalPrice": 170,
+    "currency": "PKR",
+    "description": "Plump, large-size white Kabuli chickpeas for Lahore Murgh Chholay and hummus.",
+    "images": [
+      "Products/19. Kabuli Channa 250 GM/Kabuli Channa 250 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 91,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "250 Grams"
+    }
+  },
+  {
+    "id": "ZM-0020",
+    "slug": "desi-kala-channa-black-chickpeas-500g",
+    "name": "Desi Kala Channa (Black Chickpeas) 500g",
+    "category": "Pulses & Lentils",
+    "categorySlug": "pulses-lentils",
+    "subcategory": "Chickpeas & Beans",
+    "price": 190,
+    "originalPrice": 240,
+    "currency": "PKR",
+    "description": "Nutrient-dense indigenous black chickpeas loaded with iron and plant protein.",
+    "images": [
+      "Products/20. Kala Channa 500 GM/Kaala Channa 500 GM/Kaala Chaana 500 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 81,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "500 Grams"
+    }
+  },
+  {
+    "id": "ZM-0021",
+    "slug": "pure-kewra-essence-water-50ml",
+    "name": "Pure Kewra Essence Water 50ml",
+    "category": "Food Flavors & Essences",
+    "categorySlug": "food-flavors-essences",
+    "subcategory": "Aroma & Essences",
+    "price": 130,
+    "originalPrice": 165,
+    "currency": "PKR",
+    "description": "Distilled floral kewra essence for royal Mughlai fragrance in kheer, firni, and pulao.",
+    "images": [
+      "Products/21. Kewra Essence 50 ML/1. Kewra Essence 50 ML.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 76,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Volume": "50 ML"
+    }
+  },
+  {
+    "id": "ZM-0022",
+    "slug": "super-fine-all-purpose-flour-maida-500g",
+    "name": "Super Fine All-Purpose Flour (Maida) 500g",
+    "category": "Flours & Grains",
+    "categorySlug": "flours-grains",
+    "subcategory": "Flour",
+    "price": 110,
+    "originalPrice": 140,
+    "currency": "PKR",
+    "description": "Bleach-free, velvety all-purpose white wheat flour for naan, parathas, and pastries.",
+    "images": [
+      "Products/22. Maida 500 GM/eccd650c-f161-4735-8a48-097f723e1a67.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 78,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "500 Grams"
+    }
+  },
+  {
+    "id": "ZM-0023",
+    "slug": "authentic-shahi-qurma-essence-50ml",
+    "name": "Authentic Shahi Qurma Essence 50ml",
+    "category": "Food Flavors & Essences",
+    "categorySlug": "food-flavors-essences",
+    "subcategory": "Aroma & Essences",
+    "price": 140,
+    "originalPrice": 175,
+    "currency": "PKR",
+    "description": "Rich culinary essence capturing the signature aroma of authentic shahi qorma.",
+    "images": [
+      "Products/23. Qurma Essence 50 ML/1. Qurma Essence 50 ML.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 74,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Volume": "50 ML"
+    }
+  },
+  {
+    "id": "ZM-0024",
+    "slug": "delicious-handmade-shami-kabab-1-dozen",
+    "name": "Delicious Handmade Shami Kabab (1 Dozen / 12 Pcs)",
+    "category": "Frozen & Ready to Eat",
+    "categorySlug": "frozen-ready-to-eat",
+    "subcategory": "Frozen Snacks",
+    "price": 880,
+    "originalPrice": 1100,
+    "currency": "PKR",
+    "description": "Authentic tender chicken and channa daal shami kababs with mint and spices.",
+    "images": [
+      "Products/24. Shami Kabab 1 Dozen/1. Shami Kabab 1 Dozen.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 97,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Quantity": "12 Kababs"
+    }
+  },
+  {
+    "id": "ZM-0025",
+    "slug": "special-loaded-chicken-shawarma-wrap",
+    "name": "Special Loaded Chicken Shawarma Wrap",
+    "category": "Frozen & Ready to Eat",
+    "categorySlug": "frozen-ready-to-eat",
+    "subcategory": "Ready Meals",
+    "price": 320,
+    "originalPrice": 400,
+    "currency": "PKR",
+    "description": "Loaded wrap with spiced chicken shreds, garlic tahini sauce, and crisp salad.",
+    "images": [
+      "Products/25. Shaurma/1. Shaurma.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 83,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Portion": "1 Loaded Wrap"
+    }
+  }
+]

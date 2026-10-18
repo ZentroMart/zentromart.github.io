@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZentroMart — Everything You Need, All in One Place | 20% OFF All Products</title>
+  <meta name="description" content="ZentroMart is Pakistan's premier multi-category online store. Shop pure spices, chakki atta, pulses, commercial Delish sauces, mozzarella cheese, and fresh essentials with instant WhatsApp checkout.">
+  <meta name="keywords" content="ZentroMart, online shopping Pakistan, grocery delivery, atta chakki, pulses, spices, Delish sauces, mozzarella cheese, WhatsApp checkout">
+  
+  <!-- Canonical & Open Graph -->
+  <link rel="canonical" href="./index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ZentroMart — Everything You Need, All in One Place">
+  <meta property="og:description" content="Shop premium staples, fresh groceries, pure spices, and culinary sauces across Pakistan with 20% OFF and WhatsApp checkout.">
+  <meta property="og:image" content="assets/images/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <!-- Google Fonts Preconnect & Font Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ZentroMart",
+    "url": "./",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "./shop.html?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body data-page="home">
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+      <div>
+        <span class="badge-deal">20% OFF</span>
+        <span>Grand Launch Special — Enjoy Flat 20% OFF on All Products Across Pakistan!</span>
+      </div>
+      <a href="https://wa.me/923183085519?text=Hello%20ZentroMart!%20I%20have%20an%20inquiry." target="_blank" rel="noopener noreferrer" class="support-wa">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.077-2.261-.571-1.874-.78-3.08-2.69-3.173-.815-.094-.124-.755-1.006-.755-1.92 0-.914.48-1.365.65-1.554.17-.189.373-.236.498-.236.126 0 .252.001.362.007.116.006.273-.044.426.326.158.384.542 1.32.59 1.417.048.098.08.213.016.34-.064.127-.096.206-.189.317-.095.111-.199.248-.284.333-.095.095-.195.198-.084.388.111.19.493.813 1.057 1.316.726.647 1.339.847 1.53.942.19.095.302.079.414-.047.112-.127.48-.56.608-.752.127-.19.254-.158.423-.095.17.063 1.077.507 1.262.599.185.093.308.139.354.218.046.079.046.458-.098.863z"/></svg>
+        <span>WhatsApp: +92 318 3085519</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Open navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="header-logo" title="ZentroMart Home">
+        <img src="assets/images/logo-dark.svg" alt="ZentroMart Logo" width="210" height="48">
+      </a>
+
+      <!-- Desktop Search Bar with Live Suggestions -->
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <input type="text" class="search-input" placeholder="Search 40+ products, spices, flour, sauces, daals..." aria-label="Search products">
+          <button class="search-clear-btn" aria-label="Clear search">✕</button>
+          <button class="search-btn" aria-label="Submit search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+        </div>
+        <div class="search-suggestions-dropdown"></div>
+      </div>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="wishlist.html" class="header-action-btn wishlist-action-btn" title="Wishlist">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span>Wishlist</span>
+          <span class="header-badge wishlist-badge-count" style="display:none;">0</span>
+        </a>
+
+        <a href="cart.html" class="header-action-btn cart-action-btn" title="Shopping Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span>Cart</span>
+          <span class="header-badge cart-badge-count" style="display:none;">0</span>
+        </a>
+
+        <a href="https://wa.me/923183085519?text=Hello%20ZentroMart!%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-header">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.077-2.261-.571-1.874-.78-3.08-2.69-3.173-.815-.094-.124-.755-1.006-.755-1.92 0-.914.48-1.365.65-1.554.17-.189.373-.236.498-.236.126 0 .252.001.362.007.116.006.273-.044.426.326.158.384.542 1.32.59 1.417.048.098.08.213.016.34-.064.127-.096.206-.189.317-.095.111-.199.248-.284.333-.095.095-.195.198-.084.388.111.19.493.813 1.057 1.316.726.647 1.339.847 1.53.942.19.095.302.079.414-.047.112-.127.48-.56.608-.752.127-.19.254-.158.423-.095.17.063 1.077.507 1.262.599.185.093.308.139.354.218.046.079.046.458-.098.863z"/></svg>
+          <span>WhatsApp Buy</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Search Bar (Directly beneath header on phones) -->
+  <div class="mobile-search-bar" style="display:none;">
+    <div class="search-input-wrap">
+      <input type="text" class="search-input" placeholder="Search products, daals, spices..." aria-label="Search products mobile">
+      <button class="search-clear-btn" aria-label="Clear search">✕</button>
+      <button class="search-btn" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </button>
+    </div>
+    <div class="search-suggestions-dropdown"></div>
+  </div>
+
+  <!-- Sub Navigation Links -->
+  <nav class="sub-nav" aria-label="Secondary Navigation">
+    <div class="container sub-nav-inner">
+      <div class="sub-nav-links">
+        <a href="shop.html" class="category-dropdown-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <span>All Categories</span>
+        </a>
+        <a href="index.html" class="sub-nav-link active">Home</a>
+        <a href="shop.html" class="sub-nav-link">Shop Catalog</a>
+        <a href="shop.html?category=flours-grains" class="sub-nav-link">Flours & Grains</a>
+        <a href="shop.html?category=pulses-lentils" class="sub-nav-link">Pulses & Daals</a>
+        <a href="shop.html?category=spices-seasonings" class="sub-nav-link">Spices</a>
+        <a href="shop.html?category=sauces-condiments" class="sub-nav-link">Delish Sauces 4L</a>
+        <a href="shop.html?category=dairy-eggs-fresh" class="sub-nav-link">Dairy & Fresh</a>
+        <a href="about.html" class="sub-nav-link">About Us</a>
+        <a href="contact.html" class="sub-nav-link">Contact</a>
+      </div>
+      <div style="font-size:0.8125rem; color:#f8fafc; font-weight:700;">
+        🚚 Delivery Across All Pakistan Cities
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span>✨ 20% OFF ALL PRODUCTS</span>
+          <span>•</span>
+          <span>INSTANT WHATSAPP CHECKOUT</span>
+        </div>
+        <h1 class="hero-title">
+          Everything You Need, <br>
+          <span class="gradient-text">All in One Place.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Pakistan's trusted static e-commerce hub for pure stone-ground chakki flour, washed daals, unadulterated spices, commercial 4L Delish sauces, and dairy mozzarella. Direct order to WhatsApp with zero hassle!
+        </p>
+        <div class="hero-buttons">
+          <a href="shop.html" class="btn btn-primary btn-lg">
+            <span>Explore Shop Catalog</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="https://wa.me/923183085519?text=Hello%20ZentroMart!%20I%20would%20like%20to%20order%20directly%20on%20WhatsApp." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.077-2.261-.571-1.874-.78-3.08-2.69-3.173-.815-.094-.124-.755-1.006-.755-1.92 0-.914.48-1.365.65-1.554.17-.189.373-.236.498-.236.126 0 .252.001.362.007.116.006.273-.044.426.326.158.384.542 1.32.59 1.417.048.098.08.213.016.34-.064.127-.096.206-.189.317-.095.111-.199.248-.284.333-.095.095-.195.198-.084.388.111.19.493.813 1.057 1.316.726.647 1.339.847 1.53.942.19.095.302.079.414-.047.112-.127.48-.56.608-.752.127-.19.254-.158.423-.095.17.063 1.077.507 1.262.599.185.093.308.139.354.218.046.079.046.458-.098.863z"/></svg>
+            <span>Order via WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-featured">
+          <div class="hero-badge-float">🔥 20% DISCOUNT APPLIED</div>
+          <img src="Products/1. Al Hafiz Atta Chakki/1. Al Hafiz Aata Chakki.jpg" alt="Al Hafiz Chakki Atta" style="border-radius:var(--radius-lg); width:100%; height:260px; object-fit:contain; background:#ffffff; padding:1rem; margin-bottom:1rem;" onerror="handleImageError(this)">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <div style="font-size:0.75rem; color:#fed7aa; text-transform:uppercase; font-weight:800;">Featured Favorite</div>
+              <h3 style="font-size:1.15rem; font-weight:800; color:#ffffff;">Al Hafiz Chakki Atta 10kg</h3>
+              <div style="font-size:1.25rem; font-weight:900; color:#fbbf24;">Rs. 1,440 <span style="font-size:0.85rem; color:#94a3b8; text-decoration:line-through;">Rs. 1,800</span></div>
+            </div>
+            <a href="product.html?id=ZM-0001" class="btn btn-sm btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features & Trust Value Strip -->
+  <section class="features-strip">
+    <div class="container features-grid">
+      <div class="feature-box">
+        <div class="feature-icon-circle">🛒</div>
+        <div>
+          <div class="feature-title">Fast WhatsApp Ordering</div>
+          <div class="feature-desc">No login required. Chat directly with the seller.</div>
+        </div>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon-circle">🏷️</div>
+        <div>
+          <div class="feature-title">Flat 20% OFF Promo</div>
+          <div class="feature-desc">Automatic discount tag included on all orders.</div>
+        </div>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon-circle">🚚</div>
+        <div>
+          <div class="feature-title">Nationwide Delivery</div>
+          <div class="feature-desc">Direct dispatch across Karachi, Lahore, Islamabad & more.</div>
+        </div>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon-circle">💎</div>
+        <div>
+          <div class="feature-title">100% Genuine Quality</div>
+          <div class="feature-desc">Stone-ground, pure spices, certified dairy & sauces.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="container" style="padding-top: 3.5rem;">
+
+    <!-- Categories Section -->
+    <section style="margin-bottom: 4rem;">
+      <div class="section-header">
+        <div>
+          <div class="section-tag">Explore Catalog</div>
+          <h2 class="section-title">Shop by Category</h2>
+        </div>
+        <a href="shop.html" class="view-all-link">
+          <span>View All Categories</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </div>
+      <div class="categories-grid" id="home-categories-grid">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section style="margin-bottom: 4rem;">
+      <div class="section-header">
+        <div>
+          <div class="section-tag">Handpicked For You</div>
+          <h2 class="section-title">Featured Products</h2>
+        </div>
+        <a href="shop.html" class="view-all-link">
+          <span>View All 42 Products</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </div>
+      <div class="products-grid" id="home-featured-grid">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+    <!-- Promotional Banner Strip -->
+    <section class="promo-strip-banner">
+      <div class="promo-content">
+        <h3>Grand Opening Offer — Flat 20% OFF</h3>
+        <p>Order fresh chakki atta, pulses, spices, mozzarella cheese, or 4L Delish sauces directly on WhatsApp. Quick delivery and custom quotes for bulk orders!</p>
+      </div>
+      <a href="https://wa.me/923183085519?text=Hello%20ZentroMart!%20I%20would%20like%20to%20avail%20the%2020%25%20OFF%20Grand%20Opening%20Offer." target="_blank" rel="noopener noreferrer" class="promo-btn-wa">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.077-2.261-.571-1.874-.78-3.08-2.69-3.173-.815-.094-.124-.755-1.006-.755-1.92 0-.914.48-1.365.65-1.554.17-.189.373-.236.498-.236.126 0 .252.001.362.007.116.006.273-.044.426.326.158.384.542 1.32.59 1.417.048.098.08.213.016.34-.064.127-.096.206-.189.317-.095.111-.199.248-.284.333-.095.095-.195.198-.084.388.111.19.493.813 1.057 1.316.726.647 1.339.847 1.53.942.19.095.302.079.414-.047.112-.127.48-.56.608-.752.127-.19.254-.158.423-.095.17.063 1.077.507 1.262.599.185.093.308.139.354.218.046.079.046.458-.098.863z"/></svg>
+        <span>Claim 20% OFF on WhatsApp</span>
+      </a>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section style="margin-bottom: 4rem;">
+      <div class="section-header">
+        <div>
+          <div class="section-tag">Most Popular</div>
+          <h2 class="section-title">Best Sellers</h2>
+        </div>
+        <a href="shop.html" class="view-all-link">
+          <span>See More</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </div>
+      <div class="products-grid" id="home-bestsellers-grid">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section style="margin-bottom: 4rem;">
+      <div class="section-header">
+        <div>
+          <div class="section-tag">Fresh Additions</div>
+          <h2 class="section-title">New Arrivals</h2>
+        </div>
+        <a href="shop.html" class="view-all-link">
+          <span>Browse All</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </div>
+      <div class="products-grid" id="home-newarrivals-grid">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Professional Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-about">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo.svg" alt="ZentroMart Logo" width="200" height="46">
+          </a>
+          <p class="footer-tagline">
+            ZentroMart is Pakistan's premier high-performance multi-category static e-commerce store. Delivering stone-ground flour, farm-fresh daals, authentic spices, and restaurant-grade Delish condiments with direct WhatsApp checkout.
+          </p>
+          <a href="https://wa.me/923183085519" target="_blank" rel="noopener noreferrer" class="footer-wa-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.077-2.261-.571-1.874-.78-3.08-2.69-3.173-.815-.094-.124-.755-1.006-.755-1.92 0-.914.48-1.365.65-1.554.17-.189.373-.236.498-.236.126 0 .252.001.362.007.116.006.273-.044.426.326.158.384.542 1.32.59 1.417.048.098.08.213.016.34-.064.127-.096.206-.189.317-.095.111-.199.248-.284.333-.095.095-.195.198-.084.388.111.19.493.813 1.057 1.316.726.647 1.339.847 1.53.942.19.095.302.079.414-.047.112-.127.48-.56.608-.752.127-.19.254-.158.423-.095.17.063 1.077.507 1.262.599.185.093.308.139.354.218.046.079.046.458-.098.863z"/></svg>
+            <span>+92 318 3085519 (Customer Support)</span>
+          </a>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=flours-grains">Flours & Grains</a></li>
+            <li><a href="shop.html?category=pulses-lentils">Pulses & Lentils (Daals)</a></li>
+            <li><a href="shop.html?category=spices-seasonings">Pure Spices</a></li>
+            <li><a href="shop.html?category=sauces-condiments">Delish Sauces (4 Litres)</a></li>
+            <li><a href="shop.html?category=dairy-eggs-fresh">Dairy & Fresh Eggs</a></li>
+            <li><a href="shop.html?category=frozen-ready-to-eat">Frozen & Snacks</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Customer Service</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About ZentroMart</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="shipping.html">Shipping & Delivery</a></li>
+            <li><a href="returns.html">Return & Exchange</a></li>
+            <li><a href="faq.html">Help & FAQs</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Promotions & Updates</h4>
+          <p class="footer-newsletter-p">Get notified on WhatsApp when new seasonal products and special commercial bulk prices launch.</p>
+          <form id="newsletter-form" class="footer-input-wrap">
+            <input type="text" placeholder="Your WhatsApp or Email" class="footer-input" required>
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+          <div style="margin-top:1.25rem; font-size:0.75rem; color:#64748b;">
+            🔒 Static & Privacy-Preserving. No spam.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 ZentroMart. Everything You Need, All in One Place. Built for GitHub Pages.
+        </div>
+        <div style="display:flex; gap:1.25rem;">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="shipping.html">Shipping</a>
+          <a href="faq.html">FAQs</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav">
+    <div class="mobile-bottom-nav-inner">
+      <a href="index.html" class="mobile-bottom-item active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span>Home</span>
+      </a>
+      <a href="shop.html" class="mobile-bottom-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        <span>Shop</span>
+      </a>
+      <a href="cart.html" class="mobile-bottom-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span>Cart</span>
+        <span class="mobile-bottom-badge cart-badge-count" style="display:none;">0</span>
+      </a>
+      <a href="wishlist.html" class="mobile-bottom-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        <span>Wishlist</span>
+        <span class="mobile-bottom-badge wishlist-badge-count" style="display:none;">0</span>
+      </a>
+      <a href="https://wa.me/923183085519" target="_blank" rel="noopener noreferrer" class="mobile-bottom-item" style="color:#25d366;">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.077-2.261-.571-1.874-.78-3.08-2.69-3.173-.815-.094-.124-.755-1.006-.755-1.92 0-.914.48-1.365.65-1.554.17-.189.373-.236.498-.236.126 0 .252.001.362.007.116.006.273-.044.426.326.158.384.542 1.32.59 1.417.048.098.08.213.016.34-.064.127-.096.206-.189.317-.095.111-.199.248-.284.333-.095.095-.195.198-.084.388.111.19.493.813 1.057 1.316.726.647 1.339.847 1.53.942.19.095.302.079.414-.047.112-.127.48-.56.608-.752.127-.19.254-.158.423-.095.17.063 1.077.507 1.262.599.185.093.308.139.354.218.046.079.046.458-.098.863z"/></svg>
+        <span>Chat</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/images/logo-dark.svg" alt="ZentroMart" width="160" height="36">
+      <button id="mobile-drawer-close" aria-label="Close menu" style="font-size:1.5rem; color:var(--text-muted);">✕</button>
+    </div>
+    <div class="mobile-drawer-body">
+      <div class="mobile-drawer-links">
+        <a href="index.html" class="mobile-nav-link active">Home</a>
+        <a href="shop.html" class="mobile-nav-link">Shop All Products (42)</a>
+        <a href="shop.html?category=flours-grains" class="mobile-nav-link">Flours & Grains</a>
+        <a href="shop.html?category=pulses-lentils" class="mobile-nav-link">Pulses & Daals</a>
+        <a href="shop.html?category=spices-seasonings" class="mobile-nav-link">Spices & Seasonings</a>
+        <a href="shop.html?category=sauces-condiments" class="mobile-nav-link">Delish Sauces 4L</a>
+        <a href="shop.html?category=dairy-eggs-fresh" class="mobile-nav-link">Dairy, Ghee & Eggs</a>
+        <a href="cart.html" class="mobile-nav-link">Shopping Cart</a>
+        <a href="wishlist.html" class="mobile-nav-link">Wishlist</a>
+        <a href="about.html" class="mobile-nav-link">About ZentroMart</a>
+        <a href="contact.html" class="mobile-nav-link">Contact & WhatsApp</a>
+        <a href="shipping.html" class="mobile-nav-link">Shipping Policy</a>
+        <a href="faq.html" class="mobile-nav-link">FAQs</a>
+      </div>
+      <div style="margin-top:2rem;">
+        <a href="https://wa.me/923183085519" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block">
+          <span>WhatsApp: +92 318 3085519</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Floating WhatsApp & Back to Top -->
+  <div class="floating-widgets">
+    <button class="back-to-top-btn" id="back-to-top-btn" aria-label="Back to top" title="Back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+    <a href="https://wa.me/923183085519?text=Hello%20ZentroMart!%20I%20have%20an%20order%20inquiry." target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+      <div class="pulse-ring"></div>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.077-2.261-.571-1.874-.78-3.08-2.69-3.173-.815-.094-.124-.755-1.006-.755-1.92 0-.914.48-1.365.65-1.554.17-.189.373-.236.498-.236.126 0 .252.001.362.007.116.006.273-.044.426.326.158.384.542 1.32.59 1.417.048.098.08.213.016.34-.064.127-.096.206-.189.317-.095.111-.199.248-.284.333-.095.095-.195.198-.084.388.111.19.493.813 1.057 1.316.726.647 1.339.847 1.53.942.19.095.302.079.414-.047.112-.127.48-.56.608-.752.127-.19.254-.158.423-.095.17.063 1.077.507 1.262.599.185.093.308.139.354.218.046.079.046.458-.098.863z"/></svg>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/utils.js" defer></script>
+  <script src="assets/js/products.js" defer></script>
+  <script src="assets/js/search.js" defer></script>
+  <script src="assets/js/cart.js" defer></script>
+  <script src="assets/js/wishlist.js" defer></script>
+  <script src="assets/js/whatsapp.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

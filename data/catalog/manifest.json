@@ -1,0 +1,21 @@
+{
+  "totalProducts": 42,
+  "pageSize": 25,
+  "totalPages": 2,
+  "lastUpdated": "2026-10-18T18:30:00Z",
+  "chunks": [
+    {
+      "page": 1,
+      "file": "data/catalog/chunks/chunk-1.json",
+      "count": 25,
+      "range": [1, 25]
+    },
+    {
+      "page": 2,
+      "file": "data/catalog/chunks/chunk-2.json",
+      "count": 17,
+      "range": [26, 42]
+    }
+  ],
+  "searchIndexFile": "data/products.json"
+}

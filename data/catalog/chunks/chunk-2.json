@@ -1,0 +1,420 @@
+[
+  {
+    "id": "ZM-0026",
+    "slug": "tasty-italian-style-pasta-spaghetti-400g",
+    "name": "Tasty Italian-Style Pasta Spaghetti 400g",
+    "category": "Frozen & Ready to Eat",
+    "categorySlug": "frozen-ready-to-eat",
+    "subcategory": "Pasta & Noodles",
+    "price": 240,
+    "originalPrice": 300,
+    "currency": "PKR",
+    "description": "High-durum wheat semolina spaghetti pasta that cooks al dente without sticking.",
+    "images": [
+      "Products/26. Spegitty Tasty/1. Spegitty Tasty.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 76,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "400 Grams"
+    }
+  },
+  {
+    "id": "ZM-0027",
+    "slug": "premium-semolina-suji-500g",
+    "name": "Premium Semolina (Suji) 500g",
+    "category": "Flours & Grains",
+    "categorySlug": "flours-grains",
+    "subcategory": "Semolina",
+    "price": 120,
+    "originalPrice": 150,
+    "currency": "PKR",
+    "description": "Golden granular suji perfect for Halwa Puri, sooji ka halwa, and panjiri.",
+    "images": [
+      "Products/27. SUJI 500 GM/Suji 500 GM.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 79,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "500 Grams"
+    }
+  },
+  {
+    "id": "ZM-0028",
+    "slug": "super-basmati-kernel-rice-aged-1kg",
+    "name": "Super Basmati Kernel Rice Aged 1kg",
+    "category": "Flours & Grains",
+    "categorySlug": "flours-grains",
+    "subcategory": "Rice",
+    "price": 380,
+    "originalPrice": 475,
+    "currency": "PKR",
+    "description": "Naturally aged long-grain Pakistani Super Basmati rice with captivating aroma.",
+    "images": [
+      "Products/28. Supper Banspati Rice 1 KG/Super Banspati Rice 1 KG.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 96,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "1 KG"
+    }
+  },
+  {
+    "id": "ZM-0029",
+    "slug": "premium-vanilla-food-essence-25ml",
+    "name": "Premium Vanilla Food Essence 25ml",
+    "category": "Food Flavors & Essences",
+    "categorySlug": "food-flavors-essences",
+    "subcategory": "Aroma & Essences",
+    "price": 110,
+    "originalPrice": 140,
+    "currency": "PKR",
+    "description": "Rich vanilla bean essence for cakes, cookies, custards, and milkshakes.",
+    "images": [
+      "Products/29. Vanila Essence 25 ML/Vanila Essence 25 ML.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 72,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Volume": "25 ML"
+    }
+  },
+  {
+    "id": "ZM-0030",
+    "slug": "delish-smoky-bbq-barbecue-sauce-4l",
+    "name": "Delish Smoky BBQ Barbecue Sauce 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Barbecue & Grilling",
+    "price": 1680,
+    "originalPrice": 2100,
+    "currency": "PKR",
+    "description": "Commercial 4-liter restaurant-grade smoky BBQ sauce with sweet hickory smoke notes.",
+    "images": [
+      "Products/30. Delish BBQ Sauce 4L/30. Delish BBQ Sauce 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 93,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres"
+    }
+  },
+  {
+    "id": "ZM-0031",
+    "slug": "delish-spicy-chilli-garlic-sauce-4l",
+    "name": "Delish Spicy Chilli Garlic Sauce 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Chilli Sauces",
+    "price": 1560,
+    "originalPrice": 1950,
+    "currency": "PKR",
+    "description": "Zesty fusion of crushed red chillies and roasted garlic for crispy snacks.",
+    "images": [
+      "Products/31. Delish Chilli Garlic Sauce 4L/31. Delish Chilli Garlic Sauce 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 95,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres"
+    }
+  },
+  {
+    "id": "ZM-0032",
+    "slug": "delish-classic-creamy-mayonnaise-4l",
+    "name": "Delish Classic Creamy Mayonnaise 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Mayonnaise",
+    "price": 1840,
+    "originalPrice": 2300,
+    "currency": "PKR",
+    "description": "Ultra-rich, velvety mayonnaise with smooth spreadability for sandwiches and burgers.",
+    "images": [
+      "Products/32. Delish Classic Mayonnaise 4L/32. Delish Classic Mayonnaise 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 90,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres"
+    }
+  },
+  {
+    "id": "ZM-0033",
+    "slug": "delish-hot-green-chilli-sauce-4l",
+    "name": "Delish Hot Green Chilli Sauce 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Chilli Sauces",
+    "price": 1480,
+    "originalPrice": 1850,
+    "currency": "PKR",
+    "description": "Piquant green chilli sauce prepared from farm-fresh green peppers and spices.",
+    "images": [
+      "Products/33. Delish Green Chili Souce 4L/33. Delish Green Chili Souce 4L.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 82,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres"
+    }
+  },
+  {
+    "id": "ZM-0034",
+    "slug": "delish-italian-herb-pizza-pasta-sauce-4l",
+    "name": "Delish Italian Herb Pizza & Pasta Sauce 4L (Original)",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Pizza & Pasta Sauce",
+    "price": 1720,
+    "originalPrice": 2150,
+    "currency": "PKR",
+    "description": "Rich tomato puree infused with oregano, basil, garlic, and cracked pepper.",
+    "images": [
+      "Products/34. Delish Pizza Sauce  4L/34. Delish Pizza Sauce  4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 88,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres"
+    }
+  },
+  {
+    "id": "ZM-0035",
+    "slug": "delish-special-recipe-pizza-sauce-4l",
+    "name": "Delish Special Recipe Pizza Sauce 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Pizza & Pasta Sauce",
+    "price": 1720,
+    "originalPrice": 2150,
+    "currency": "PKR",
+    "description": "Chef's gourmet formula pizza sauce with slow-simmered ripe tomatoes.",
+    "images": [
+      "Products/35. Delish Pizza Sauce 4L/35. Delish Pizza Sauce 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 85,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres"
+    }
+  },
+  {
+    "id": "ZM-0036",
+    "slug": "delish-real-thick-gourmet-mayonnaise-4l",
+    "name": "Delish Real Thick Gourmet Mayonnaise 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Mayonnaise",
+    "price": 1960,
+    "originalPrice": 2450,
+    "currency": "PKR",
+    "description": "Extra-heavy duty real mayonnaise crafted for high-volume commercial kitchens.",
+    "images": [
+      "Products/36. Delish Real Mayonnaise Sauce 4L/36. Delish Real Mayonnaise Sauce 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 91,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres"
+    }
+  },
+  {
+    "id": "ZM-0037",
+    "slug": "delish-dark-brewed-soy-sauce-4l",
+    "name": "Delish Dark Brewed Soy Sauce 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Asian Condiments",
+    "price": 1360,
+    "originalPrice": 1700,
+    "currency": "PKR",
+    "description": "Naturally fermented dark soy sauce delivering rich umami savory notes.",
+    "images": [
+      "Products/37. Delish Soy Sauce 4L/37. Delish Soy Sauce 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 84,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres"
+    }
+  },
+  {
+    "id": "ZM-0038",
+    "slug": "delish-classic-rich-tomato-ketchup-4l",
+    "name": "Delish Classic Rich Tomato Ketchup 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Tomato Ketchup",
+    "price": 1440,
+    "originalPrice": 1800,
+    "currency": "PKR",
+    "description": "Thick, sweet, and tangy tomato ketchup made with vine-ripened red tomatoes.",
+    "images": [
+      "Products/38. Delish Tomato Ketchup 4L/38. Delish Tomato Ketchup 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 94,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres"
+    }
+  },
+  {
+    "id": "ZM-0039",
+    "slug": "premium-dairy-mozzarella-cheese-block-1kg",
+    "name": "Premium Dairy Mozzarella Cheese Block 1kg (High Stretch)",
+    "category": "Dairy, Eggs & Fresh",
+    "categorySlug": "dairy-eggs-fresh",
+    "subcategory": "Cheese",
+    "price": 1520,
+    "originalPrice": 1900,
+    "currency": "PKR",
+    "description": "Whole milk mozzarella cheese block with outstanding meltability and long cheese pull.",
+    "images": [
+      "Products/39. Mozzarella Block with Stretchy Pizza and Fresh Garnishes/39. Mozzarella Block with Stretchy Pizza and Fresh Garnishes.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": true,
+    "popularityRank": 99,
+    "createdAt": "2026-10-16",
+    "specifications": {
+      "Weight": "1 KG Block"
+    }
+  },
+  {
+    "id": "ZM-0040",
+    "slug": "traditional-pure-desi-ghee-1kg-tin",
+    "name": "Traditional Pure Desi Ghee (Cow & Buffalo Blend) 1kg Tin",
+    "category": "Dairy, Eggs & Fresh",
+    "categorySlug": "dairy-eggs-fresh",
+    "subcategory": "Ghee & Butter",
+    "price": 2480,
+    "originalPrice": 3100,
+    "currency": "PKR",
+    "description": "100% natural clarified butter made from fresh grass-fed milk cream using bilona method.",
+    "images": [
+      "Products/40. Pure Desi Ghee Tradition/40. Pure Desi Ghee Tradition.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 98,
+    "createdAt": "2026-10-16",
+    "specifications": {
+      "Weight": "1 KG Tin"
+    }
+  },
+  {
+    "id": "ZM-0041",
+    "slug": "fresh-farm-white-eggs-tray-30-eggs",
+    "name": "Fresh Farm White Eggs Tray (30 Eggs in Kraft Carton)",
+    "category": "Dairy, Eggs & Fresh",
+    "categorySlug": "dairy-eggs-fresh",
+    "subcategory": "Eggs",
+    "price": 680,
+    "originalPrice": 850,
+    "currency": "PKR",
+    "description": "Carefully inspected farm-fresh white eggs with bright yolks in 30-egg kraft tray.",
+    "images": [
+      "Products/41. Thirty White Eggs in Kraft Carton/41. Thirty White Eggs in Kraft Carton.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 96,
+    "createdAt": "2026-10-16",
+    "specifications": {
+      "Quantity": "30 Eggs"
+    }
+  },
+  {
+    "id": "ZM-0042",
+    "slug": "delish-pure-white-synthetic-vinegar-4l",
+    "name": "Delish Pure White Synthetic Vinegar 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Vinegar",
+    "price": 760,
+    "originalPrice": 950,
+    "currency": "PKR",
+    "description": "Multipurpose 5% acidity clear white vinegar for pickling, Chinese cooking, and sanitization.",
+    "images": [
+      "Products/42. Vinegar Delish Vinegar 4L/42. Vinegar Delish Vinegar 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 80,
+    "createdAt": "2026-10-16",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres"
+    }
+  }
+]

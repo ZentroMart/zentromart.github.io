@@ -1,0 +1,1124 @@
+[
+  {
+    "id": "ZM-0001",
+    "slug": "al-hafiz-chakki-atta-whole-wheat-flour",
+    "name": "Al Hafiz Chakki Atta (Whole Wheat Flour) 10kg",
+    "category": "Flours & Grains",
+    "categorySlug": "flours-grains",
+    "subcategory": "Flour",
+    "price": 1440,
+    "originalPrice": 1800,
+    "currency": "PKR",
+    "description": "100% pure stone-ground whole wheat chakki atta packed with dietary fiber, natural bran, and essential nutrients. Ideal for soft, fluffy rotis and chapatis with long-lasting freshness.",
+    "images": [
+      "Products/1. Al Hafiz Atta Chakki/1. Al Hafiz Aata Chakki.jpg",
+      "Products/1. Al Hafiz Atta Chakki/2. Al Hafiz Aata Chakki.jpg",
+      "Products/1. Al Hafiz Atta Chakki/3. Al Hafiz Aata Chakki.jpg",
+      "Products/1. Al Hafiz Atta Chakki/4. Al Hafiz Aata Chakki.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 98,
+    "createdAt": "2026-10-10",
+    "specifications": {
+      "Brand": "Al Hafiz",
+      "Weight": "10 KG",
+      "Type": "Stone-ground Chakki Atta",
+      "Dietary": "100% Whole Grain, High Fiber",
+      "Shelf Life": "3 Months"
+    }
+  },
+  {
+    "id": "ZM-0002",
+    "slug": "al-hafiz-channa-daal-besan-gram-flour",
+    "name": "Al Hafiz Channa Daal Besan (Gram Flour) 1kg",
+    "category": "Flours & Grains",
+    "categorySlug": "flours-grains",
+    "subcategory": "Besan & Pulses Flour",
+    "price": 320,
+    "originalPrice": 400,
+    "currency": "PKR",
+    "description": "Finely ground pure gram flour made from premium roasted channa daal. Excellent for crispy pakoras, traditional mithai, laddu, and savory snacks.",
+    "images": [
+      "Products/2. Al Hafiz Channa Daal Besan/1. Al Hafiz Channa Daal Besan.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 88,
+    "createdAt": "2026-10-11",
+    "specifications": {
+      "Brand": "Al Hafiz",
+      "Weight": "1 KG",
+      "Purity": "100% Pure Channa Daal",
+      "Gluten": "Naturally Gluten Free",
+      "Storage": "Cool & Dry Place"
+    }
+  },
+  {
+    "id": "ZM-0003",
+    "slug": "al-hafiz-dhaniya-powder-coriander-250g",
+    "name": "Al Hafiz Pure Coriander Powder (Dhaniya) 250g",
+    "category": "Spices & Seasonings",
+    "categorySlug": "spices-seasonings",
+    "subcategory": "Ground Spices",
+    "price": 200,
+    "originalPrice": 250,
+    "currency": "PKR",
+    "description": "Aromatic, cold-milled coriander seed powder with earthy notes and natural essential oils. Adds depth, aroma, and authentic taste to curries and gravies.",
+    "images": [
+      "Products/3. Al Hafiz Dhaniya Powder/1. Al Hafiz Dhaniya Powder.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 75,
+    "createdAt": "2026-10-12",
+    "specifications": {
+      "Brand": "Al Hafiz",
+      "Weight": "250 Grams",
+      "Ingredients": "Pure Dried Coriander Seeds",
+      "Form": "Fine Powder",
+      "Preservatives": "Zero Additives"
+    }
+  },
+  {
+    "id": "ZM-0004",
+    "slug": "al-hafiz-haldi-powder-turmeric-250g",
+    "name": "Al Hafiz Pure Turmeric Powder (Haldi) 250g",
+    "category": "Spices & Seasonings",
+    "categorySlug": "spices-seasonings",
+    "subcategory": "Ground Spices",
+    "price": 220,
+    "originalPrice": 275,
+    "currency": "PKR",
+    "description": "Vibrant golden turmeric powder with high natural curcumin content. Sourced from unadulterated turmeric rhizomes for health benefits and rich curry coloration.",
+    "images": [
+      "Products/4. Al Hafiz Haldi Powder/1. Al Hafiz Haldi Powder.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 92,
+    "createdAt": "2026-10-12",
+    "specifications": {
+      "Brand": "Al Hafiz",
+      "Weight": "250 Grams",
+      "Curcumin Content": "High Grade",
+      "Use": "Daily Cooking & Golden Milk"
+    }
+  },
+  {
+    "id": "ZM-0005",
+    "slug": "al-hafiz-kuti-lal-mirch-chilli-flakes-250g",
+    "name": "Al Hafiz Crushed Red Chilli Flakes (Kuti Lal Mirch) 250g",
+    "category": "Spices & Seasonings",
+    "categorySlug": "spices-seasonings",
+    "subcategory": "Chilli & Pepper",
+    "price": 260,
+    "originalPrice": 325,
+    "currency": "PKR",
+    "description": "Bold and fiery crushed red peppers with seeds intact for optimal heat and zesty punch. Perfect for pizzas, stir-fries, marinades, and desi salans.",
+    "images": [
+      "Products/5. Al Hafiz Kuti Lal Mirch/1. Al Hafiz Kuti Lal Mirch.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 89,
+    "createdAt": "2026-10-13",
+    "specifications": {
+      "Brand": "Al Hafiz",
+      "Weight": "250 Grams",
+      "Form": "Crushed Flakes with Seeds",
+      "Spiciness": "Medium to Hot"
+    }
+  },
+  {
+    "id": "ZM-0006",
+    "slug": "al-hafiz-pesi-lal-mirch-chilli-powder-250g",
+    "name": "Al Hafiz Pure Red Chilli Powder (Pesi Lal Mirch) 250g",
+    "category": "Spices & Seasonings",
+    "categorySlug": "spices-seasonings",
+    "subcategory": "Ground Spices",
+    "price": 280,
+    "originalPrice": 350,
+    "currency": "PKR",
+    "description": "Fine, unadulterated red chilli powder delivering brilliant natural red hue and balanced piquant spice to every Pakistani meat and vegetarian delicacy.",
+    "images": [
+      "Products/6. Al Hafiz Pesi Lal Mirch/1. Al Hafiz Pesi Lal Mirch.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 85,
+    "createdAt": "2026-10-13",
+    "specifications": {
+      "Brand": "Al Hafiz",
+      "Weight": "250 Grams",
+      "Type": "Sun-dried Red Chillies",
+      "Artificial Colors": "None (100% Pure)"
+    }
+  },
+  {
+    "id": "ZM-0007",
+    "slug": "premium-dried-aloo-bukhara-irani-plum-250g",
+    "name": "Premium Dried Aloo Bukhara Irani (Plum Irani) 250g",
+    "category": "Dry Fruits & Specialties",
+    "categorySlug": "dry-fruits-specialties",
+    "subcategory": "Dried Fruits",
+    "price": 440,
+    "originalPrice": 550,
+    "currency": "PKR",
+    "description": "Plump, sun-dried Irani sour plums (Aloo Bukhara). Essential secret ingredient for authentic Karachi Degi Biryani, sweet and sour chutneys, and digestion.",
+    "images": [
+      "Products/7. Aloo Bukhara Irani (Plum Irani)/1. Allo Bukhara Qandhari.webp"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": true,
+    "popularityRank": 94,
+    "createdAt": "2026-10-14",
+    "specifications": {
+      "Origin": "Iran / Qandhar Grade",
+      "Weight": "250 Grams",
+      "Taste": "Sweet & Tangy",
+      "Culinary Use": "Biryani, Chutney, Refreshing Sherbet"
+    }
+  },
+  {
+    "id": "ZM-0008",
+    "slug": "pure-baking-soda-food-grade-50g",
+    "name": "Pure Baking Soda 50g (Food Grade)",
+    "category": "Baking & Cooking",
+    "categorySlug": "baking-cooking",
+    "subcategory": "Leavening Agents",
+    "price": 60,
+    "originalPrice": 75,
+    "currency": "PKR",
+    "description": "High-purity sodium bicarbonate for fluffy cakes, bakery items, tenderizing meat, soaking chickpeas/channa, and multiple kitchen cleaning purposes.",
+    "images": [
+      "Products/8. Bakking Soda 50 GM/Bakking Soda 50 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 68,
+    "createdAt": "2026-10-14",
+    "specifications": {
+      "Grade": "100% Food Grade Sodium Bicarbonate",
+      "Weight": "50 Grams",
+      "Packaging": "Sealed Moisture-Proof Sachet"
+    }
+  },
+  {
+    "id": "ZM-0009",
+    "slug": "special-biryani-food-essence-50ml",
+    "name": "Special Biryani Food Essence 50ml",
+    "category": "Food Flavors & Essences",
+    "categorySlug": "food-flavors-essences",
+    "subcategory": "Aroma & Essences",
+    "price": 140,
+    "originalPrice": 175,
+    "currency": "PKR",
+    "description": "Concentrated Karachi degi biryani aroma essence. Just a few drops bring that irresistible restaurant-style biryani fragrance to your homemade rice dishes.",
+    "images": [
+      "Products/9. Biryani Essence 50 ML/1. Biryani Essence 50 ML.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 96,
+    "createdAt": "2026-10-14",
+    "specifications": {
+      "Volume": "50 ML",
+      "Flavor Profile": "Authentic Degi Biryani Aroma",
+      "Usage": "1-2 drops per kg rice",
+      "Type": "Food Safe Liquid Essence"
+    }
+  },
+  {
+    "id": "ZM-0010",
+    "slug": "ready-to-eat-tangy-channa-chaat-special-bowl",
+    "name": "Ready-to-Eat Tangy Channa Chaat Special Bowl",
+    "category": "Frozen & Ready to Eat",
+    "categorySlug": "frozen-ready-to-eat",
+    "subcategory": "Ready Meals",
+    "price": 280,
+    "originalPrice": 350,
+    "currency": "PKR",
+    "description": "Traditional Karachi-style tangy channa chaat infused with imli chutney, boiled chickpeas, diced potatoes, onions, fresh coriander, and special chaat masala.",
+    "images": [
+      "Products/10. Channa Chaat/1. Channa Chaat.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 82,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Portion": "Single Serving Bowl (approx. 350g)",
+      "Style": "Street Style Tangy & Spicy",
+      "Shelf Life": "Consume fresh on delivery"
+    }
+  },
+  {
+    "id": "ZM-0011",
+    "slug": "crispy-chicken-donuts-1-dozen-12-pcs",
+    "name": "Crispy Chicken Donuts (1 Dozen / 12 Pcs Pack)",
+    "category": "Frozen & Ready to Eat",
+    "categorySlug": "frozen-ready-to-eat",
+    "subcategory": "Frozen Snacks",
+    "price": 960,
+    "originalPrice": 1200,
+    "currency": "PKR",
+    "description": "Crunchy breadcrumb coated chicken donuts seasoned with herbs, cheese seasoning, and mild spices. Ready to deep fry or air fry in minutes for tea time and lunchboxes.",
+    "images": [
+      "Products/11. Chicken Donuts 1 Dozen/1. Chicken Donuts 1 Dozen.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": true,
+    "popularityRank": 95,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Quantity": "12 Pieces (1 Dozen)",
+      "Meat Type": "100% Halal Chicken Breast Mince",
+      "Preparation": "Deep fry at 180°C or Air Fry 12 mins",
+      "Storage": "Keep Frozen at -18°C"
+    }
+  },
+  {
+    "id": "ZM-0012",
+    "slug": "premium-corn-flour-starch-100g",
+    "name": "Premium Corn Flour / Starch 100g",
+    "category": "Baking & Cooking",
+    "categorySlug": "baking-cooking",
+    "subcategory": "Thickeners",
+    "price": 80,
+    "originalPrice": 100,
+    "currency": "PKR",
+    "description": "Silky-smooth white corn starch ideal for thickening Chinese hot & sour soups, gravies, custard puddings, and achieving extra crunch in fried coatings.",
+    "images": [
+      "Products/12. CORN FLOOR 100 GM/CORN FLOOR 100 GM.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 71,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "100 Grams",
+      "Form": "Ultra Fine White Starch",
+      "Use": "Soups, Gravies & Batters"
+    }
+  },
+  {
+    "id": "ZM-0013",
+    "slug": "premium-quality-daal-mash-washed-urad-250g",
+    "name": "Premium Quality Daal Mash (Washed Urad) 250g",
+    "category": "Pulses & Lentils",
+    "categorySlug": "pulses-lentils",
+    "subcategory": "Lentils",
+    "price": 140,
+    "originalPrice": 175,
+    "currency": "PKR",
+    "description": "Triple-cleaned, polished white Daal Mash (split washed black gram). Cooks into delicious dhaba-style bhuni daal mash with rich buttery flavor.",
+    "images": [
+      "Products/13. DAAL MASH 250 GM/DAAL MASH 250 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 86,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "250 Grams",
+      "Variety": "Washed White Urad",
+      "Grading": "A-Grade Machine Cleaned"
+    }
+  },
+  {
+    "id": "ZM-0014",
+    "slug": "clean-pure-daal-masoor-red-lentils-250g",
+    "name": "Clean & Pure Daal Masoor (Red Lentils) 250g",
+    "category": "Pulses & Lentils",
+    "categorySlug": "pulses-lentils",
+    "subcategory": "Lentils",
+    "price": 110,
+    "originalPrice": 140,
+    "currency": "PKR",
+    "description": "Fast-cooking split red lentils (Masoor Daal) loaded with protein, iron, and dietary fiber. Blends smoothly for comforting everyday dal and soups.",
+    "images": [
+      "Products/14. DAAL MASOOR 250 GM/DAAL MASOOR 250 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 84,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "250 Grams",
+      "Variety": "Split Red Lentil",
+      "Cooking Time": "15-20 Minutes"
+    }
+  },
+  {
+    "id": "ZM-0015",
+    "slug": "pure-daal-moong-dhuli-yellow-lentils-250g",
+    "name": "Pure Daal Moong Dhuli (Yellow Lentils) 250g",
+    "category": "Pulses & Lentils",
+    "categorySlug": "pulses-lentils",
+    "subcategory": "Lentils",
+    "price": 120,
+    "originalPrice": 150,
+    "currency": "PKR",
+    "description": "Light, easily digestible yellow split moong daal. Wholesome choice for khichdi, comforting dal bowls, and wholesome family nutrition.",
+    "images": [
+      "Products/15. DAAL MOONG 250 GM/DAAL MOONG 250 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 80,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "250 Grams",
+      "Variety": "Yellow Split Moong",
+      "Texture": "Creamy & Smooth"
+    }
+  },
+  {
+    "id": "ZM-0016",
+    "slug": "aromatic-cinnamon-sticks-daar-cheeni-50g",
+    "name": "Aromatic Cinnamon Sticks (Daar Cheeni) 50g",
+    "category": "Spices & Seasonings",
+    "categorySlug": "spices-seasonings",
+    "subcategory": "Whole Spices",
+    "price": 130,
+    "originalPrice": 165,
+    "currency": "PKR",
+    "description": "Selected sweet-scented cinnamon bark sticks (Daar Cheeni). Essential spice for garam masala, biryani tarka, chai, and baking infusions.",
+    "images": [
+      "Products/16. DAAR CHEENI 50 Gram/1. DAAR CHEENI 50 Gram.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 77,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "50 Grams",
+      "Type": "Whole Cinnamon Quills / Bark",
+      "Aroma": "Sweet, Warm & Woody"
+    }
+  },
+  {
+    "id": "ZM-0017",
+    "slug": "farm-fresh-daal-channa-split-bengal-gram-250g",
+    "name": "Farm Fresh Daal Channa (Split Bengal Gram) 250g",
+    "category": "Pulses & Lentils",
+    "categorySlug": "pulses-lentils",
+    "subcategory": "Lentils",
+    "price": 95,
+    "originalPrice": 120,
+    "currency": "PKR",
+    "description": "Firm-textured, nutty-flavored split channa lentils. Ideal for traditional Daal Gosht, tarka dal, and wholesome vegetable curries.",
+    "images": [
+      "Products/17. Dal Channa 250 GM/Dal Channa 250 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 87,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "250 Grams",
+      "Grading": "Selected Big Grain",
+      "Protein": "High Dietary Protein"
+    }
+  },
+  {
+    "id": "ZM-0018",
+    "slug": "organic-pure-turmeric-powder-250g-pack",
+    "name": "Organic Pure Turmeric Powder 250g",
+    "category": "Spices & Seasonings",
+    "categorySlug": "spices-seasonings",
+    "subcategory": "Ground Spices",
+    "price": 210,
+    "originalPrice": 265,
+    "currency": "PKR",
+    "description": "Natural sun-dried haldi powder with rich golden tone and earthy therapeutic fragrance. Clean, stone-milled without added lead or starch.",
+    "images": [
+      "Products/18. Haldi Powder Turmeric Powder 250 Gram/1. Haldi Powder Turmeric Powder 250.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 79,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "250 Grams",
+      "Form": "Fine Powder",
+      "Additives": "0% Preservatives"
+    }
+  },
+  {
+    "id": "ZM-0019",
+    "slug": "big-grain-kabuli-channa-white-chickpeas-250g",
+    "name": "Big Grain Kabuli Channa (White Chickpeas) 250g",
+    "category": "Pulses & Lentils",
+    "categorySlug": "pulses-lentils",
+    "subcategory": "Chickpeas & Beans",
+    "price": 135,
+    "originalPrice": 170,
+    "currency": "PKR",
+    "description": "Plump, large-size white Kabuli chickpeas that soften to a melt-in-mouth texture when boiled. Perfect for Lahore Murgh Chholay, salads, and hummus.",
+    "images": [
+      "Products/19. Kabuli Channa 250 GM/Kabuli Channa 250 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 91,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "250 Grams",
+      "Size": "10-12 mm Bold Grain",
+      "Usage": "Chholay, Hummus, Chaat"
+    }
+  },
+  {
+    "id": "ZM-0020",
+    "slug": "desi-kala-channa-black-chickpeas-500g",
+    "name": "Desi Kala Channa (Black Chickpeas) 500g",
+    "category": "Pulses & Lentils",
+    "categorySlug": "pulses-lentils",
+    "subcategory": "Chickpeas & Beans",
+    "price": 190,
+    "originalPrice": 240,
+    "currency": "PKR",
+    "description": "Nutrient-dense indigenous black chickpeas loaded with iron and plant protein. Traditional favorite for dry roasted chana, spicy gravy, and energy soups.",
+    "images": [
+      "Products/20. Kala Channa 500 GM/Kaala Channa 500 GM/Kaala Chaana 500 GM.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 81,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "500 Grams",
+      "Variety": "Pakistani Desi Kala Channa",
+      "Dietary": "Rich in Iron & Fiber"
+    }
+  },
+  {
+    "id": "ZM-0021",
+    "slug": "pure-kewra-essence-water-50ml",
+    "name": "Pure Kewra Essence Water 50ml",
+    "category": "Food Flavors & Essences",
+    "categorySlug": "food-flavors-essences",
+    "subcategory": "Aroma & Essences",
+    "price": 130,
+    "originalPrice": 165,
+    "currency": "PKR",
+    "description": "Distilled floral kewra essence from pandanus flowers. Adds royal Mughlai fragrance to kheer, sheer khurma, zarda, firni, and pulao.",
+    "images": [
+      "Products/21. Kewra Essence 50 ML/1. Kewra Essence 50 ML.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 76,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Volume": "50 ML",
+      "Botanical": "Screw Pine (Kewra)",
+      "Ideal For": "Traditional Sweets & Rice Dishes"
+    }
+  },
+  {
+    "id": "ZM-0022",
+    "slug": "super-fine-all-purpose-flour-maida-500g",
+    "name": "Super Fine All-Purpose Flour (Maida) 500g",
+    "category": "Flours & Grains",
+    "categorySlug": "flours-grains",
+    "subcategory": "Flour",
+    "price": 110,
+    "originalPrice": 140,
+    "currency": "PKR",
+    "description": "Bleach-free, velvety all-purpose white wheat flour (Maida). Excellent elasticity for naan, parathas, samosa dough, cakes, and pastries.",
+    "images": [
+      "Products/22. Maida 500 GM/eccd650c-f161-4735-8a48-097f723e1a67.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 78,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "500 Grams",
+      "Type": "Refined Wheat Flour",
+      "Texture": "Ultra Fine & Smooth"
+    }
+  },
+  {
+    "id": "ZM-0023",
+    "slug": "authentic-shahi-qurma-essence-50ml",
+    "name": "Authentic Shahi Qurma Essence 50ml",
+    "category": "Food Flavors & Essences",
+    "categorySlug": "food-flavors-essences",
+    "subcategory": "Aroma & Essences",
+    "price": 140,
+    "originalPrice": 175,
+    "currency": "PKR",
+    "description": "Rich culinary essence capturing the signature aroma of authentic shahi qorma with notes of mace, nutmeg, and cardamom.",
+    "images": [
+      "Products/23. Qurma Essence 50 ML/1. Qurma Essence 50 ML.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 74,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Volume": "50 ML",
+      "Aroma": "Shahi Mughlai Qorma",
+      "Application": "Add during final dum/simmer"
+    }
+  },
+  {
+    "id": "ZM-0024",
+    "slug": "delicious-handmade-shami-kabab-1-dozen",
+    "name": "Delicious Handmade Shami Kabab (1 Dozen / 12 Pcs)",
+    "category": "Frozen & Ready to Eat",
+    "categorySlug": "frozen-ready-to-eat",
+    "subcategory": "Frozen Snacks",
+    "price": 880,
+    "originalPrice": 1100,
+    "currency": "PKR",
+    "description": "Authentic tender chicken and channa daal shami kababs flavored with fresh mint, green chillies, and secret garam masala. Shallow fry to golden perfection in 4 minutes.",
+    "images": [
+      "Products/24. Shami Kabab 1 Dozen/1. Shami Kabab 1 Dozen.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 97,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Quantity": "12 Kababs per pack",
+      "Ingredients": "Halal Chicken, Channa Daal, Fresh Herbs",
+      "Cooking Method": "Shallow Fry with Egg Dip",
+      "Storage": "Frozen at -18°C"
+    }
+  },
+  {
+    "id": "ZM-0025",
+    "slug": "special-loaded-chicken-shawarma-wrap",
+    "name": "Special Loaded Chicken Shawarma Wrap",
+    "category": "Frozen & Ready to Eat",
+    "categorySlug": "frozen-ready-to-eat",
+    "subcategory": "Ready Meals",
+    "price": 320,
+    "originalPrice": 400,
+    "currency": "PKR",
+    "description": "Loaded Lebanese-inspired wrap with spiced chicken shreds, garlic tahini sauce, pickled cucumbers, and crisp iceberg lettuce in fresh pita.",
+    "images": [
+      "Products/25. Shaurma/1. Shaurma.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 83,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Portion": "1 Loaded Wrap",
+      "Filling": "Tandoori Chicken & Creamy Garlic Mayo",
+      "Bread": "Soft Fresh Pita"
+    }
+  },
+  {
+    "id": "ZM-0026",
+    "slug": "tasty-italian-style-pasta-spaghetti-400g",
+    "name": "Tasty Italian-Style Pasta Spaghetti 400g",
+    "category": "Frozen & Ready to Eat",
+    "categorySlug": "frozen-ready-to-eat",
+    "subcategory": "Pasta & Noodles",
+    "price": 240,
+    "originalPrice": 300,
+    "currency": "PKR",
+    "description": "High-durum wheat semolina spaghetti pasta that cooks al dente without sticking. Pairs perfectly with tomato marinara, white cheese sauce, or spicy chicken chowmein.",
+    "images": [
+      "Products/26. Spegitty Tasty/1. Spegitty Tasty.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 76,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "400 Grams",
+      "Composition": "100% Durum Wheat Semolina",
+      "Boil Time": "8-10 Minutes"
+    }
+  },
+  {
+    "id": "ZM-0027",
+    "slug": "premium-semolina-suji-500g",
+    "name": "Premium Semolina (Suji) 500g",
+    "category": "Flours & Grains",
+    "categorySlug": "flours-grains",
+    "subcategory": "Semolina",
+    "price": 120,
+    "originalPrice": 150,
+    "currency": "PKR",
+    "description": "Golden granular suji roasted or plain, perfect for traditional Halwa Puri breakfast, sweet sooji ka halwa, panjiri, and crispy snacks.",
+    "images": [
+      "Products/27. SUJI 500 GM/Suji 500 GM.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 79,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "500 Grams",
+      "Grain Size": "Medium Golden Granules",
+      "Purity": "Cleaned & Weevil-Free"
+    }
+  },
+  {
+    "id": "ZM-0028",
+    "slug": "super-basmati-kernel-rice-aged-1kg",
+    "name": "Super Basmati Kernel Rice Aged 1kg",
+    "category": "Flours & Grains",
+    "categorySlug": "flours-grains",
+    "subcategory": "Rice",
+    "price": 380,
+    "originalPrice": 475,
+    "currency": "PKR",
+    "description": "Naturally aged long-grain Pakistani Super Basmati rice. Delivers captivating aroma and doubles in length upon cooking for royal Biryani and Pulao.",
+    "images": [
+      "Products/28. Supper Banspati Rice 1 KG/Super Banspati Rice 1 KG.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 96,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Weight": "1 KG",
+      "Grain Length": "7.5mm+ Aged Kernel",
+      "Aroma": "Naturally Fragrant Basmati",
+      "Soaking Time": "25-30 Minutes"
+    }
+  },
+  {
+    "id": "ZM-0029",
+    "slug": "premium-vanilla-food-essence-25ml",
+    "name": "Premium Vanilla Food Essence 25ml",
+    "category": "Food Flavors & Essences",
+    "categorySlug": "food-flavors-essences",
+    "subcategory": "Aroma & Essences",
+    "price": 110,
+    "originalPrice": 140,
+    "currency": "PKR",
+    "description": "Rich vanilla bean essence for baking cakes, cookies, ice creams, custards, and milkshakes. Non-alcoholic and highly concentrated.",
+    "images": [
+      "Products/29. Vanila Essence 25 ML/Vanila Essence 25 ML.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 72,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Volume": "25 ML",
+      "Profile": "Sweet Creamy Vanilla",
+      "Use": "Baking, Desserts & Beverages"
+    }
+  },
+  {
+    "id": "ZM-0030",
+    "slug": "delish-smoky-bbq-barbecue-sauce-4l",
+    "name": "Delish Smoky BBQ Barbecue Sauce 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Barbecue & Grilling",
+    "price": 1680,
+    "originalPrice": 2100,
+    "currency": "PKR",
+    "description": "Commercial 4-liter restaurant-grade smoky BBQ sauce. Features a sweet hickory smoke profile, caramelized molasses, and spice blend for chicken tikka, burgers, and wings.",
+    "images": [
+      "Products/30. Delish BBQ Sauce 4L/30. Delish BBQ Sauce 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 93,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres (Commercial Can)",
+      "Flavor": "Smoky & Sweet Hickory",
+      "Suitable For": "Restaurants, Cafes & Large Families"
+    }
+  },
+  {
+    "id": "ZM-0031",
+    "slug": "delish-spicy-chilli-garlic-sauce-4l",
+    "name": "Delish Spicy Chilli Garlic Sauce 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Chilli Sauces",
+    "price": 1560,
+    "originalPrice": 1950,
+    "currency": "PKR",
+    "description": "Zesty fusion of crushed red chillies and roasted garlic. The #1 companion for crispy fries, fried chicken, paratha rolls, and fast food delights.",
+    "images": [
+      "Products/31. Delish Chilli Garlic Sauce 4L/31. Delish Chilli Garlic Sauce 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 95,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres",
+      "Heat Level": "Spicy & Tangy Garlic",
+      "Packaging": "Heavy Duty Handle Gallon"
+    }
+  },
+  {
+    "id": "ZM-0032",
+    "slug": "delish-classic-creamy-mayonnaise-4l",
+    "name": "Delish Classic Creamy Mayonnaise 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Mayonnaise",
+    "price": 1840,
+    "originalPrice": 2300,
+    "currency": "PKR",
+    "description": "Ultra-rich, velvety mayonnaise with smooth spreadability and balanced tang. Perfect base for club sandwiches, coleslaw, burger spreads, and dips.",
+    "images": [
+      "Products/32. Delish Classic Mayonnaise 4L/32. Delish Classic Mayonnaise 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 90,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres",
+      "Texture": "Thick Creamy Emulsion",
+      "Usage": "Sandwiches, Burgers & Salads"
+    }
+  },
+  {
+    "id": "ZM-0033",
+    "slug": "delish-hot-green-chilli-sauce-4l",
+    "name": "Delish Hot Green Chilli Sauce 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Chilli Sauces",
+    "price": 1480,
+    "originalPrice": 1850,
+    "currency": "PKR",
+    "description": "Piquant green chilli sauce prepared from farm-fresh green peppers, vinegar, and ground spices. Gives a fresh, spicy bite to rolls, samosas, and Chinese dishes.",
+    "images": [
+      "Products/33. Delish Green Chili Souce 4L/33. Delish Green Chili Souce 4L.jpg"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 82,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres",
+      "Base": "Fresh Pakistani Green Chillies",
+      "Heat Level": "Fiery Kick"
+    }
+  },
+  {
+    "id": "ZM-0034",
+    "slug": "delish-italian-herb-pizza-pasta-sauce-4l",
+    "name": "Delish Italian Herb Pizza & Pasta Sauce 4L (Original)",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Pizza & Pasta Sauce",
+    "price": 1720,
+    "originalPrice": 2150,
+    "currency": "PKR",
+    "description": "Rich tomato puree infused with oregano, basil, garlic, and cracked black pepper. Specially simmered to prevent soggy pizza crusts and coat pasta evenly.",
+    "images": [
+      "Products/34. Delish Pizza Sauce  4L/34. Delish Pizza Sauce  4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 88,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres",
+      "Herb Blend": "Oregano, Basil & Thyme",
+      "Consistency": "Thick Pizza Spread"
+    }
+  },
+  {
+    "id": "ZM-0035",
+    "slug": "delish-special-recipe-pizza-sauce-4l",
+    "name": "Delish Special Recipe Pizza Sauce 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Pizza & Pasta Sauce",
+    "price": 1720,
+    "originalPrice": 2150,
+    "currency": "PKR",
+    "description": "Chef's gourmet formula pizza sauce with slow-simmered ripe tomatoes, sweet undertones, and aromatic Mediterranean spices for commercial pizzerias.",
+    "images": [
+      "Products/35. Delish Pizza Sauce 4L/35. Delish Pizza Sauce 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 85,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres",
+      "Style": "Commercial Pizzeria Grade",
+      "Packaging": "Easy Pour 4L Jug"
+    }
+  },
+  {
+    "id": "ZM-0036",
+    "slug": "delish-real-thick-gourmet-mayonnaise-4l",
+    "name": "Delish Real Thick Gourmet Mayonnaise 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Mayonnaise",
+    "price": 1960,
+    "originalPrice": 2450,
+    "currency": "PKR",
+    "description": "Extra-heavy duty real mayonnaise crafted for high-volume commercial kitchens. Does not separate when baked or exposed to hot burger patties.",
+    "images": [
+      "Products/36. Delish Real Mayonnaise Sauce 4L/36. Delish Real Mayonnaise Sauce 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 91,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres",
+      "Formulation": "Heavy Duty Gourmet Grade",
+      "Heat Tolerance": "Bake & Grill Stable"
+    }
+  },
+  {
+    "id": "ZM-0037",
+    "slug": "delish-dark-brewed-soy-sauce-4l",
+    "name": "Delish Dark Brewed Soy Sauce 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Asian Condiments",
+    "price": 1360,
+    "originalPrice": 1700,
+    "currency": "PKR",
+    "description": "Naturally fermented dark soy sauce delivering rich umami savory notes and appetizing caramel glaze to chow mein, fried rice, and meat marinades.",
+    "images": [
+      "Products/37. Delish Soy Sauce 4L/37. Delish Soy Sauce 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": false,
+    "popularityRank": 84,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres",
+      "Type": "Dark Brewed Soy Sauce",
+      "Applications": "Chinese, Pan-Asian & BBQ Marinades"
+    }
+  },
+  {
+    "id": "ZM-0038",
+    "slug": "delish-classic-rich-tomato-ketchup-4l",
+    "name": "Delish Classic Rich Tomato Ketchup 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Tomato Ketchup",
+    "price": 1440,
+    "originalPrice": 1800,
+    "currency": "PKR",
+    "description": "Thick, sweet, and tangy tomato ketchup made with vine-ripened red tomatoes. Smooth texture that clings to French fries, nuggets, and burgers.",
+    "images": [
+      "Products/38. Delish Tomato Ketchup 4L/38. Delish Tomato Ketchup 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 94,
+    "createdAt": "2026-10-15",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres",
+      "Tomato Solids": "High Density Paste",
+      "Packaging": "Commercial Dispenser Gallon"
+    }
+  },
+  {
+    "id": "ZM-0039",
+    "slug": "premium-dairy-mozzarella-cheese-block-1kg",
+    "name": "Premium Dairy Mozzarella Cheese Block 1kg (High Stretch)",
+    "category": "Dairy, Eggs & Fresh",
+    "categorySlug": "dairy-eggs-fresh",
+    "subcategory": "Cheese",
+    "price": 1520,
+    "originalPrice": 1900,
+    "currency": "PKR",
+    "description": "Whole milk mozzarella cheese block with outstanding meltability and long dramatic cheese pull. Grates cleanly for authentic pizzas, calzones, and lasagnas.",
+    "images": [
+      "Products/39. Mozzarella Block with Stretchy Pizza and Fresh Garnishes/39. Mozzarella Block with Stretchy Pizza and Fresh Garnishes.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": true,
+    "popularityRank": 99,
+    "createdAt": "2026-10-16",
+    "specifications": {
+      "Weight": "1 KG Block",
+      "Type": "Low-Moisture Whole Milk Mozzarella",
+      "Characteristics": "High Stretch & Golden Browning",
+      "Storage": "Refrigerate at 2°C to 4°C"
+    }
+  },
+  {
+    "id": "ZM-0040",
+    "slug": "traditional-pure-desi-ghee-1kg-tin",
+    "name": "Traditional Pure Desi Ghee (Cow & Buffalo Blend) 1kg Tin",
+    "category": "Dairy, Eggs & Fresh",
+    "categorySlug": "dairy-eggs-fresh",
+    "subcategory": "Ghee & Butter",
+    "price": 2480,
+    "originalPrice": 3100,
+    "currency": "PKR",
+    "description": "100% natural clarified butter (Desi Ghee) made from fresh grass-fed milk cream using the traditional bilona technique. Unrivaled grainy texture and pure aroma.",
+    "images": [
+      "Products/40. Pure Desi Ghee Tradition/40. Pure Desi Ghee Tradition.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 98,
+    "createdAt": "2026-10-16",
+    "specifications": {
+      "Weight": "1 KG Tin Pack",
+      "Milk Source": "Pure Cow & Buffalo Cream",
+      "Texture": "Traditional Grainy Danedar",
+      "Benefit": "Zero Artificial Flavors or Hydrogenated Oils"
+    }
+  },
+  {
+    "id": "ZM-0041",
+    "slug": "fresh-farm-white-eggs-tray-30-eggs",
+    "name": "Fresh Farm White Eggs Tray (30 Eggs in Kraft Carton)",
+    "category": "Dairy, Eggs & Fresh",
+    "categorySlug": "dairy-eggs-fresh",
+    "subcategory": "Eggs",
+    "price": 680,
+    "originalPrice": 850,
+    "currency": "PKR",
+    "description": "Carefully inspected, farm-fresh white eggs with bright yolks and firm whites. Packed securely in an eco-friendly 30-egg kraft carton tray to prevent breakage.",
+    "images": [
+      "Products/41. Thirty White Eggs in Kraft Carton/41. Thirty White Eggs in Kraft Carton.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": true,
+    "bestSeller": true,
+    "newArrival": false,
+    "popularityRank": 96,
+    "createdAt": "2026-10-16",
+    "specifications": {
+      "Quantity": "30 Eggs (1 Full Tray)",
+      "Grade": "A-Grade Farm Fresh",
+      "Carton": "Recycled Protective Kraft Tray",
+      "Origin": "Certified Poultry Farms"
+    }
+  },
+  {
+    "id": "ZM-0042",
+    "slug": "delish-pure-white-synthetic-vinegar-4l",
+    "name": "Delish Pure White Synthetic Vinegar 4L Commercial Gallon",
+    "category": "Sauces & Condiments",
+    "categorySlug": "sauces-condiments",
+    "subcategory": "Vinegar",
+    "price": 760,
+    "originalPrice": 950,
+    "currency": "PKR",
+    "description": "Multipurpose 5% acidity clear white vinegar. Excellent for food pickling, Chinese cooking marinades, tenderizing meat, and kitchen sanitization.",
+    "images": [
+      "Products/42. Vinegar Delish Vinegar 4L/42. Vinegar Delish Vinegar 4L.png"
+    ],
+    "stockStatus": "in-stock",
+    "featured": false,
+    "bestSeller": false,
+    "newArrival": true,
+    "popularityRank": 80,
+    "createdAt": "2026-10-16",
+    "specifications": {
+      "Brand": "Delish",
+      "Volume": "4 Litres",
+      "Acidity": "5% Standard Culinary Strength",
+      "Use": "Cooking, Pickling & Cleaning"
+    }
+  }
+]

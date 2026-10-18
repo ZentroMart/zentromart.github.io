@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart — ZentroMart | WhatsApp Checkout</title>
+  <meta name="description" content="Review your shopping cart items and checkout directly with the seller via WhatsApp. Enjoy 20% promotional discount across Pakistan at ZentroMart.">
+  <link rel="canonical" href="./cart.html">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="cart">
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+      <div>
+        <span class="badge-deal">20% OFF</span>
+        <span>WhatsApp Checkout Number: +92 318 3085519 — Flat 20% Launch Discount Included!</span>
+      </div>
+      <a href="https://wa.me/923183085519" target="_blank" rel="noopener noreferrer" class="support-wa">
+        <span>Customer Support</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Open navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+      <a href="index.html" class="header-logo" title="ZentroMart Home">
+        <img src="assets/images/logo-dark.svg" alt="ZentroMart Logo" width="210" height="48">
+      </a>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <input type="text" class="search-input" placeholder="Search products..." aria-label="Search catalog">
+          <button class="search-clear-btn" aria-label="Clear search">✕</button>
+          <button class="search-btn" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+        </div>
+        <div class="search-suggestions-dropdown"></div>
+      </div>
+
+      <div class="header-actions">
+        <a href="wishlist.html" class="header-action-btn wishlist-action-btn" title="Wishlist">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span>Wishlist</span>
+          <span class="header-badge wishlist-badge-count" style="display:none;">0</span>
+        </a>
+
+        <a href="cart.html" class="header-action-btn cart-action-btn" title="Shopping Cart" style="color:var(--color-orange);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span>Cart</span>
+          <span class="header-badge cart-badge-count" style="display:none;">0</span>
+        </a>
+
+        <a href="https://wa.me/923183085519" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-header">
+          <span>WhatsApp Buy</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sub Navigation -->
+  <nav class="sub-nav">
+    <div class="container sub-nav-inner">
+      <div class="sub-nav-links">
+        <a href="index.html" class="sub-nav-link">Home</a>
+        <a href="shop.html" class="sub-nav-link">Shop Catalog</a>
+        <a href="shop.html?category=flours-grains" class="sub-nav-link">Flours & Grains</a>
+        <a href="shop.html?category=pulses-lentils" class="sub-nav-link">Pulses & Daals</a>
+        <a href="shop.html?category=spices-seasonings" class="sub-nav-link">Spices</a>
+        <a href="shop.html?category=sauces-condiments" class="sub-nav-link">Delish Sauces</a>
+        <a href="about.html" class="sub-nav-link">About Us</a>
+        <a href="contact.html" class="sub-nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span class="sep">/</span>
+      <span style="color:var(--text-main); font-weight:700;">Shopping Cart</span>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:1.5rem;">
+      <div>
+        <h1 style="font-size:2rem; font-weight:900; color:var(--color-primary);">Your Shopping Cart</h1>
+        <p style="color:var(--text-muted); font-size:0.9375rem;">Orders are submitted directly to our official WhatsApp (+92 318 3085519) with 20% OFF applied.</p>
+      </div>
+      <button onclick="CartEngine.clear()" style="font-size:0.875rem; color:var(--color-danger); font-weight:700;">Clear All Items</button>
+    </div>
+
+    <div class="cart-layout">
+      <!-- Items Container -->
+      <section id="cart-items-wrapper">
+        <!-- Rendered via cart.js -->
+      </section>
+
+      <!-- Summary Box -->
+      <aside id="cart-summary-wrapper">
+        <!-- Rendered via cart.js -->
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 ZentroMart. Everything You Need, All in One Place.</div>
+        <div style="display:flex; gap:1.25rem;">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="shipping.html">Shipping</a>
+          <a href="faq.html">FAQs</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Nav -->
+  <nav class="mobile-bottom-nav">
+    <div class="mobile-bottom-nav-inner">
+      <a href="index.html" class="mobile-bottom-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span>Home</span>
+      </a>
+      <a href="shop.html" class="mobile-bottom-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        <span>Shop</span>
+      </a>
+      <a href="cart.html" class="mobile-bottom-item active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span>Cart</span>
+        <span class="mobile-bottom-badge cart-badge-count" style="display:none;">0</span>
+      </a>
+      <a href="wishlist.html" class="mobile-bottom-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        <span>Wishlist</span>
+        <span class="mobile-bottom-badge wishlist-badge-count" style="display:none;">0</span>
+      </a>
+      <a href="https://wa.me/923183085519" target="_blank" rel="noopener noreferrer" class="mobile-bottom-item" style="color:#25d366;">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.077-2.261-.571-1.874-.78-3.08-2.69-3.173-.815-.094-.124-.755-1.006-.755-1.92 0-.914.48-1.365.65-1.554.17-.189.373-.236.498-.236.126 0 .252.001.362.007.116.006.273-.044.426.326.158.384.542 1.32.59 1.417.048.098.08.213.016.34-.064.127-.096.206-.189.317-.095.111-.199.248-.284.333-.095.095-.195.198-.084.388.111.19.493.813 1.057 1.316.726.647 1.339.847 1.53.942.19.095.302.079.414-.047.112-.127.48-.56.608-.752.127-.19.254-.158.423-.095.17.063 1.077.507 1.262.599.185.093.308.139.354.218.046.079.046.458-.098.863z"/></svg>
+        <span>Chat</span>
+      </a>
+    </div>
+  </nav>
+
+  <script src="assets/js/utils.js" defer></script>
+  <script src="assets/js/products.js" defer></script>
+  <script src="assets/js/search.js" defer></script>
+  <script src="assets/js/cart.js" defer></script>
+  <script src="assets/js/wishlist.js" defer></script>
+  <script src="assets/js/whatsapp.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

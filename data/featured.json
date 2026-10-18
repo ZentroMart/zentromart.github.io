@@ -1,0 +1,42 @@
+{
+  "featuredProductIds": [
+    "ZM-0001",
+    "ZM-0039",
+    "ZM-0040",
+    "ZM-0041",
+    "ZM-0011",
+    "ZM-0024",
+    "ZM-0030",
+    "ZM-0038"
+  ],
+  "bestSellerIds": [
+    "ZM-0001",
+    "ZM-0040",
+    "ZM-0039",
+    "ZM-0041",
+    "ZM-0009",
+    "ZM-0011",
+    "ZM-0024",
+    "ZM-0028",
+    "ZM-0031",
+    "ZM-0038"
+  ],
+  "newArrivalIds": [
+    "ZM-0007",
+    "ZM-0010",
+    "ZM-0016",
+    "ZM-0021",
+    "ZM-0025",
+    "ZM-0033",
+    "ZM-0035",
+    "ZM-0039",
+    "ZM-0042"
+  ],
+  "promotionalBanner": {
+    "title": "Grand Launch Promotion — Flat 20% OFF Everything!",
+    "subtitle": "Order fresh essentials, pure spices & commercial sauces directly on WhatsApp.",
+    "tag": "LIMITED TIME OFFER",
+    "code": "ZM20OFF",
+    "whatsappMessage": "Hello ZentroMart! I would like to avail the 20% OFF Launch Promotion."
+  }
+}

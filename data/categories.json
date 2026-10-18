@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cat-flours-grains",
+    "name": "Flours & Grains",
+    "slug": "flours-grains",
+    "icon": "🌾",
+    "description": "Premium whole wheat flour, basmati rice, semolina, and wholesome cooking grains.",
+    "featured": true
+  },
+  {
+    "id": "cat-pulses-lentils",
+    "name": "Pulses & Lentils (Daals)",
+    "slug": "pulses-lentils",
+    "icon": "🥣",
+    "description": "Farm-fresh cleaned lentils, split chickpeas, yellow daal moong, and high-protein beans.",
+    "featured": true
+  },
+  {
+    "id": "cat-spices-seasonings",
+    "name": "Spices & Seasonings",
+    "slug": "spices-seasonings",
+    "icon": "🌶️",
+    "description": "Authentic Pakistani pure ground spices, turmeric, crushed chilli flakes, and aromatics.",
+    "featured": true
+  },
+  {
+    "id": "cat-sauces-condiments",
+    "name": "Sauces & Condiments",
+    "slug": "sauces-condiments",
+    "icon": "🥫",
+    "description": "Commercial 4-litre chef-grade sauces, ketchup, BBQ, mayonnaise, soy sauce, and vinegar.",
+    "featured": true
+  },
+  {
+    "id": "cat-dairy-fresh",
+    "name": "Dairy, Eggs & Fresh",
+    "slug": "dairy-eggs-fresh",
+    "icon": "🧀",
+    "description": "Pure desi ghee, high-stretch mozzarella pizza cheese, and farm fresh white eggs.",
+    "featured": true
+  },
+  {
+    "id": "cat-frozen-ready",
+    "name": "Frozen & Ready to Eat",
+    "slug": "frozen-ready-to-eat",
+    "icon": "🥟",
+    "description": "Chicken donuts, shami kababs, loaded shawarma wraps, spaghetti, and channa chaat.",
+    "featured": true
+  },
+  {
+    "id": "cat-food-flavors-essences",
+    "name": "Food Flavors & Essences",
+    "slug": "food-flavors-essences",
+    "icon": "🧪",
+    "description": "Aromatic biryani essence, pure kewra water, rich qurma essence, and vanilla aroma.",
+    "featured": false
+  },
+  {
+    "id": "cat-baking-cooking",
+    "name": "Baking & Cooking",
+    "slug": "baking-cooking",
+    "icon": "🧁",
+    "description": "Fine food-grade baking soda, pure corn starch flour, and kitchen culinary essentials.",
+    "featured": false
+  },
+  {
+    "id": "cat-dry-fruits",
+    "name": "Dry Fruits & Specialties",
+    "slug": "dry-fruits-specialties",
+    "icon": "🥜",
+    "description": "Selected dried Irani Aloo Bukhara plums and traditional sweet & savory cooking staples.",
+    "featured": false
+  }
+]
