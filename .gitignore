@@ -2,6 +2,8 @@
 .env.*
 !.env.example
 node_modules/
-deploy_to_github.bat
-deploy_to_github.ps1
-login_github.bat
+*.bat
+*.ps1
+create-repo.html
+github_user.json
+repo_result.json
