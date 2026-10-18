@@ -130,20 +130,20 @@ const CartEngine = (() => {
     cartItems.forEach(item => {
       const p = item.product;
       const firstImage = (p.images && p.images.length > 0) ? p.images[0] : 'assets/images/placeholder.svg';
-      const itemSubtotal = (p.price || 0) * item.quantity;
-      const itemOrig = (p.originalPrice || p.price * 1.25) * item.quantity;
-      totalAmount += itemSubtotal;
-      originalTotal += itemOrig;
 
       itemsHtml += `
         <div class="cart-item-row" data-id="${escapeHtml(p.id)}">
-          <img src="${encodeURI(firstImage)}" alt="${escapeHtml(p.name)}" class="cart-item-thumb" onerror="handleImageError(this)">
+          <a href="product.html?id=${encodeURIComponent(p.id)}#${encodeURIComponent(p.id)}" onclick="try{sessionStorage.setItem('zm_selected_product_id','${escapeHtml(p.id)}');localStorage.setItem('zm_selected_product_id','${escapeHtml(p.id)}');}catch(e){}">
+            <img src="${encodeURI(firstImage)}" alt="${escapeHtml(p.name)}" class="cart-item-thumb" onerror="handleImageError(this)">
+          </a>
           
           <div class="cart-item-info">
             <span class="product-category-chip">${escapeHtml(p.category)}</span>
-            <h4><a href="product.html?id=${encodeURIComponent(p.id)}">${escapeHtml(p.name)}</a></h4>
+            <h4><a href="product.html?id=${encodeURIComponent(p.id)}#${encodeURIComponent(p.id)}" onclick="try{sessionStorage.setItem('zm_selected_product_id','${escapeHtml(p.id)}');localStorage.setItem('zm_selected_product_id','${escapeHtml(p.id)}');}catch(e){}">${escapeHtml(p.name)}</a></h4>
             <div class="cart-item-sku">SKU: ${escapeHtml(p.id)}</div>
-            <div class="cart-item-price">${formatPrice(p.price)} each</div>
+            <div class="cart-item-deal" style="color:#15803d; font-weight:700; font-size:0.85rem; margin-top:0.25rem;">
+              🏷️ 20% OFF Launch Promo Applied
+            </div>
           </div>
 
           <div class="stepper-box">
@@ -154,7 +154,7 @@ const CartEngine = (() => {
           </div>
 
           <div style="text-align:right;">
-            <div style="font-weight:800; font-size:1.1rem; color:var(--color-primary);">${formatPrice(itemSubtotal)}</div>
+            <div style="font-weight:700; font-size:0.9rem; color:#15803d; margin-bottom:0.5rem;">Qty: ${item.quantity}</div>
             <button class="cart-item-remove-btn" onclick="CartEngine.remove('${escapeHtml(p.id)}', event)" title="Remove item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="3 6 5 6 21 6"></polyline>
@@ -169,39 +169,31 @@ const CartEngine = (() => {
     cartListContainer.innerHTML = itemsHtml;
 
     if (summaryWrapper) {
-      const totalSavings = originalTotal > totalAmount ? originalTotal - totalAmount : 0;
       summaryWrapper.innerHTML = `
         <div class="cart-summary-box">
           <h3 class="cart-summary-title">Order Summary</h3>
           
           <div class="summary-row">
-            <span>Total Items</span>
-            <strong>${getCount()} items</strong>
+            <span>Total Unique Products</span>
+            <strong>${cartItems.length} items</strong>
           </div>
 
           <div class="summary-row">
-            <span>Catalog Subtotal</span>
-            <span>${formatPrice(originalTotal)}</span>
+            <span>Total Units / Quantity</span>
+            <strong>${getCount()} units</strong>
           </div>
-
-          ${totalSavings > 0 ? `
-          <div class="summary-row" style="color:#15803d; font-weight:700;">
-            <span>20% Promotional Discount</span>
-            <span>-${formatPrice(totalSavings)}</span>
-          </div>
-          ` : ''}
 
           <div class="summary-promo-tag">
-            🎁 20% OFF Launch Promotion Applied to All Items
+            🎁 Flat 20% Launch Promotion Included
           </div>
 
           <div class="summary-row total-row">
-            <span>Estimated Total</span>
-            <span style="color:var(--color-orange);">${formatPrice(totalAmount)}</span>
+            <span>Price & Quotation</span>
+            <span style="color:#15803d; font-weight:800;">Confirmed on WhatsApp</span>
           </div>
 
           <p class="summary-delivery-note">
-            ⚠️ Delivery charges vary by city across Pakistan and will be confirmed on WhatsApp before dispatch.
+            ⚠️ Order details will be sent directly to WhatsApp (+92 318 3085519). The seller will verify stock, apply your 20% discount, and calculate city delivery charges.
           </p>
 
           <button class="btn btn-whatsapp btn-block btn-lg" onclick="WhatsAppEngine.checkoutCart()" style="margin-top:1.25rem;">

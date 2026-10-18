@@ -12,15 +12,28 @@ const ProductEngine = (() => {
    */
   async function getAllProducts() {
     if (productsCache) return productsCache;
+    let raw = null;
     try {
       const response = await fetch('data/products.json');
-      if (!response.ok) throw new Error('Failed to load products');
-      productsCache = await response.json();
-      return productsCache;
+      if (response.ok) {
+        raw = await response.json();
+      }
     } catch (err) {
-      console.error('Error fetching products:', err);
-      return [];
+      // Fallback below
     }
+    if (!raw && window.__ZM_CATALOG_DATA__ && Array.isArray(window.__ZM_CATALOG_DATA__.products)) {
+      raw = window.__ZM_CATALOG_DATA__.products;
+    }
+    if (Array.isArray(raw)) {
+      productsCache = raw.map(p => {
+        if (!p.categorySlug && p.category) {
+          p.categorySlug = typeof slugify === 'function' ? slugify(p.category) : p.category.toLowerCase().replace(/\s+/g, '-');
+        }
+        return p;
+      });
+      return productsCache;
+    }
+    return [];
   }
 
   /**
@@ -30,13 +43,18 @@ const ProductEngine = (() => {
     if (categoriesCache) return categoriesCache;
     try {
       const response = await fetch('data/categories.json');
-      if (!response.ok) throw new Error('Failed to load categories');
-      categoriesCache = await response.json();
-      return categoriesCache;
+      if (response.ok) {
+        categoriesCache = await response.json();
+        return categoriesCache;
+      }
     } catch (err) {
-      console.error('Error fetching categories:', err);
-      return [];
+      // Fallback below
     }
+    if (window.__ZM_CATALOG_DATA__ && Array.isArray(window.__ZM_CATALOG_DATA__.categories)) {
+      categoriesCache = window.__ZM_CATALOG_DATA__.categories;
+      return categoriesCache;
+    }
+    return [];
   }
 
   /**
@@ -46,25 +64,91 @@ const ProductEngine = (() => {
     if (featuredCache) return featuredCache;
     try {
       const response = await fetch('data/featured.json');
-      if (!response.ok) throw new Error('Failed to load featured data');
-      featuredCache = await response.json();
-      return featuredCache;
+      if (response.ok) {
+        featuredCache = await response.json();
+        return featuredCache;
+      }
     } catch (err) {
-      console.error('Error fetching featured data:', err);
-      return { featuredProductIds: [], bestSellerIds: [], newArrivalIds: [] };
+      // Fallback below
     }
+    if (window.__ZM_CATALOG_DATA__ && window.__ZM_CATALOG_DATA__.featured) {
+      featuredCache = window.__ZM_CATALOG_DATA__.featured;
+      return featuredCache;
+    }
+    return { featuredProductIds: [], bestSellerIds: [], newArrivalIds: [] };
   }
 
   /**
-   * Find product by ID or Slug
+   * Find product by ID or Slug (case-insensitive with safe fallback)
    */
   async function getProductByIdOrSlug(idOrSlug) {
     const products = await getAllProducts();
-    return products.find(p => p.id === idOrSlug || p.slug === idOrSlug) || null;
+    if (!products || products.length === 0) return null;
+
+    let target = idOrSlug;
+
+    // 1. If not passed, check URL params (?id=... or ?slug=...)
+    if (!target) {
+      target = getUrlParam('id') || getUrlParam('slug');
+    }
+
+    // 2. If still empty, check URL hash (e.g. #ZM-0005 or #slug)
+    if (!target && window.location.hash) {
+      const h = window.location.hash.substring(1).trim();
+      if (h) target = h;
+    }
+
+    // 3. If still empty, check sessionStorage
+    if (!target) {
+      try {
+        target = sessionStorage.getItem('zm_selected_product_id');
+      } catch (e) {}
+    }
+
+    // 4. If still empty, check localStorage
+    if (!target) {
+      try {
+        target = localStorage.getItem('zm_selected_product_id');
+      } catch (e) {}
+    }
+
+    // 5. If still empty, default to first product
+    if (!target) return products[0];
+
+    const clean = String(target).trim().toLowerCase();
+    const matched = products.find(p => 
+      (p.id && p.id.toLowerCase() === clean) || 
+      (p.slug && p.slug.toLowerCase() === clean) ||
+      (p.name && p.name.toLowerCase() === clean)
+    );
+
+    if (matched) {
+      try {
+        sessionStorage.setItem('zm_selected_product_id', matched.id);
+        localStorage.setItem('zm_selected_product_id', matched.id);
+      } catch (e) {}
+      return matched;
+    }
+
+    // Try numeric SKU match e.g. "2" -> "ZM-0002"
+    const numMatch = clean.match(/\d+/);
+    if (numMatch) {
+      const numStr = numMatch[0].padStart(4, '0');
+      const bySku = products.find(p => p.id && p.id.toLowerCase().includes(numStr));
+      if (bySku) {
+        try {
+          sessionStorage.setItem('zm_selected_product_id', bySku.id);
+          localStorage.setItem('zm_selected_product_id', bySku.id);
+        } catch (e) {}
+        return bySku;
+      }
+    }
+
+    return products[0];
   }
 
   /**
-   * Create HTML string for a single Product Card
+   * Create HTML string for a single Product Card (No prices shown)
    */
   function renderProductCard(product) {
     if (!product) return '';
@@ -74,14 +158,15 @@ const ProductEngine = (() => {
       : 'assets/images/placeholder.svg';
 
     const isWishlisted = WishlistEngine ? WishlistEngine.has(product.id) : false;
-    const savePercent = product.originalPrice && product.originalPrice > product.price
-      ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
-      : 20;
+    const targetUrl = `product.html?id=${encodeURIComponent(product.id)}#${encodeURIComponent(product.id)}`;
+    const storeScript = `try{sessionStorage.setItem('zm_selected_product_id','${escapeHtml(product.id)}');localStorage.setItem('zm_selected_product_id','${escapeHtml(product.id)}');}catch(e){}`;
 
     return `
-      <article class="product-card" data-product-id="${escapeHtml(product.id)}" data-category="${escapeHtml(product.categorySlug)}">
+      <article class="product-card" data-product-id="${escapeHtml(product.id)}" data-category="${escapeHtml(product.categorySlug)}"
+               onclick="if (!event.target.closest('button') && !event.target.closest('a')) { ${storeScript} window.location.href='${targetUrl}'; }"
+               style="cursor: pointer;">
         <div class="product-card-image-wrap">
-          <span class="product-badge-discount">-${savePercent}% OFF</span>
+          <span class="product-badge-discount">20% OFF</span>
           ${product.bestSeller ? '<span class="product-badge-tag">BESTSELLER</span>' : ''}
           ${product.newArrival ? '<span class="product-badge-tag">NEW</span>' : ''}
           
@@ -94,7 +179,7 @@ const ProductEngine = (() => {
             </svg>
           </button>
 
-          <a href="product.html?id=${encodeURIComponent(product.id)}" title="${escapeHtml(product.name)}">
+          <a href="${targetUrl}" onclick="${storeScript}" title="${escapeHtml(product.name)}">
             <img src="${encodeURI(firstImage)}" 
                  alt="${escapeHtml(product.name)}" 
                  class="product-card-img" 
@@ -112,7 +197,7 @@ const ProductEngine = (() => {
           </div>
 
           <h3 class="product-card-title">
-            <a href="product.html?id=${encodeURIComponent(product.id)}">${escapeHtml(product.name)}</a>
+            <a href="${targetUrl}" onclick="${storeScript}" title="${escapeHtml(product.name)}">${escapeHtml(product.name)}</a>
           </h3>
 
           <div class="product-rating">
@@ -122,9 +207,8 @@ const ProductEngine = (() => {
           </div>
 
           <div class="product-card-price-block">
-            <span class="product-current-price">${formatPrice(product.price)}</span>
-            ${product.originalPrice ? `<span class="product-original-price">${formatPrice(product.originalPrice)}</span>` : ''}
-            <span class="product-save-pill">20% OFF Applied</span>
+            <span class="product-save-pill">20% OFF Launch Promo</span>
+            <span class="product-wa-confirm-tag">Confirm Price on WhatsApp</span>
           </div>
 
           <div class="product-card-actions">

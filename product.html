@@ -112,7 +112,7 @@
           <button class="gallery-nav-arrow gallery-prev" id="gallery-prev-btn" onclick="GalleryEngine.prev()" aria-label="Previous image">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
           </button>
-          <img id="gallery-main-img" src="assets/images/placeholder.svg" alt="Product Main Image" class="gallery-main-img" onerror="handleImageError(this)">
+          <img id="gallery-main-img" src="assets/images/placeholder.svg" alt="Product Main Image" class="gallery-main-img" onclick="GalleryEngine.next()" style="cursor:pointer;" title="Click to view next image" onerror="handleImageError(this)">
           <button class="gallery-nav-arrow gallery-next" id="gallery-next-btn" onclick="GalleryEngine.next()" aria-label="Next image">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
           </button>
@@ -140,17 +140,17 @@
           </div>
         </div>
 
-        <!-- Price Card -->
+        <!-- Deal & Pricing Box (No fixed price - confirmed via WhatsApp) -->
         <div class="product-detail-price-box">
-          <div class="detail-price-row">
-            <span class="detail-current-price" id="product-detail-current-price">Rs. 0</span>
-            <span class="detail-original-price" id="product-detail-orig-price" style="display:none;">Rs. 0</span>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center; margin-bottom:0.75rem;">
+            <span class="badge-deal" style="font-size:0.95rem; padding:0.4rem 0.85rem;">🎉 Flat 20% OFF Launch Promo</span>
+            <span class="product-wa-confirm-tag" style="background:#dcfce7; color:#15803d; font-size:0.85rem; padding:0.4rem 0.75rem; border-radius:9999px; font-weight:700;">Price Confirmed on WhatsApp</span>
           </div>
           <div class="detail-promo-alert">
-            ✓ 20% OFF Limited Launch Deal Applied to this product.
+            ✓ Grand Launch Special: 20% promotional discount automatically applied to all orders across Pakistan.
           </div>
-          <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.35rem;">
-            *Prices shown on the website are informational and confirmed by seller via WhatsApp upon ordering.
+          <div style="font-size:0.8125rem; color:var(--text-muted); margin-top:0.6rem; line-height:1.5;">
+            *Wholesale & retail prices are confirmed directly by the seller via WhatsApp upon ordering based on quantity and destination city.
           </div>
         </div>
 
@@ -307,6 +307,7 @@
   </div>
 
   <script src="assets/js/utils.js" defer></script>
+  <script src="data/catalog-bundle.js" defer></script>
   <script src="assets/js/products.js" defer></script>
   <script src="assets/js/gallery.js" defer></script>
   <script src="assets/js/search.js" defer></script>

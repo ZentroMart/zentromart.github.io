@@ -1,0 +1,16 @@
+{
+  "cleanUrls": false,
+  "rewrites": [
+    { "source": "/product", "destination": "/product.html" },
+    { "source": "/shop", "destination": "/shop.html" },
+    { "source": "/cart", "destination": "/cart.html" },
+    { "source": "/wishlist", "destination": "/wishlist.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/shipping", "destination": "/shipping.html" },
+    { "source": "/returns", "destination": "/returns.html" }
+  ]
+}

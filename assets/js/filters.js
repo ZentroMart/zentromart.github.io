@@ -13,15 +13,30 @@ const FilterEngine = (() => {
     page: 1
   };
 
+  function getCategoryFromLocation() {
+    let cat = getUrlParam('category');
+    if (!cat && window.location.hash) {
+      const h = window.location.hash.substring(1).trim();
+      if (h && !h.startsWith('ZM-') && !h.includes('=')) {
+        cat = h;
+      }
+    }
+    if (!cat) {
+      try {
+        cat = sessionStorage.getItem('zm_selected_category') || localStorage.getItem('zm_selected_category');
+      } catch (e) {}
+    }
+    return cat || 'all';
+  }
+
   async function initShopView() {
     const productsContainer = document.getElementById('shop-products-container');
     if (!productsContainer) return;
 
     allProductsCache = await ProductEngine.getAllProducts();
-    await renderCategoryFilterList();
 
-    // Read initial params from URL
-    const urlCategory = getUrlParam('category') || 'all';
+    // Read initial params from URL / storage / hash BEFORE rendering category list
+    const urlCategory = getCategoryFromLocation();
     const urlSearch = getUrlParam('search') || '';
     const urlSort = getUrlParam('sort') || 'popularity';
     const urlPage = parseInt(getUrlParam('page'), 10) || 1;
@@ -31,22 +46,23 @@ const FilterEngine = (() => {
     currentFilters.sortBy = urlSort;
     currentFilters.page = urlPage;
 
+    // Save selected category to storage if active
+    try {
+      if (urlCategory && urlCategory !== 'all') {
+        sessionStorage.setItem('zm_selected_category', urlCategory);
+        localStorage.setItem('zm_selected_category', urlCategory);
+      }
+    } catch (e) {}
+
+    // Render category list now with correct active item!
+    await renderCategoryFilterList();
+
     // Sync input states
     const searchInput = document.getElementById('shop-search-input');
     if (searchInput && urlSearch) searchInput.value = urlSearch;
 
     const sortSelect = document.getElementById('shop-sort-select');
     if (sortSelect) sortSelect.value = urlSort;
-
-    const priceSlider = document.getElementById('shop-price-slider');
-    const priceDisplay = document.getElementById('shop-price-display');
-    if (priceSlider) {
-      priceSlider.addEventListener('input', (e) => {
-        currentFilters.maxPrice = parseInt(e.target.value, 10);
-        if (priceDisplay) priceDisplay.textContent = formatPrice(currentFilters.maxPrice);
-        applyFilters(1); // reset to page 1 on filter change
-      });
-    }
 
     if (sortSelect) {
       sortSelect.addEventListener('change', (e) => {
@@ -70,6 +86,21 @@ const FilterEngine = (() => {
       applyFilters(page, false);
     };
 
+    // React to hashchange and popstate events on shop catalog
+    window.addEventListener('hashchange', () => {
+      const newCat = getCategoryFromLocation();
+      if (newCat !== currentFilters.category) {
+        setCategory(newCat);
+      }
+    });
+
+    window.addEventListener('popstate', () => {
+      const newCat = getCategoryFromLocation();
+      if (newCat !== currentFilters.category) {
+        setCategory(newCat);
+      }
+    });
+
     // Initial render
     applyFilters(currentFilters.page);
   }
@@ -84,12 +115,17 @@ const FilterEngine = (() => {
     // Count per category
     const countMap = {};
     products.forEach(p => {
-      countMap[p.categorySlug] = (countMap[p.categorySlug] || 0) + 1;
+      const pSlug = (p.categorySlug || '').toLowerCase();
+      countMap[pSlug] = (countMap[pSlug] || 0) + 1;
     });
+
+    const activeCat = (currentFilters.category || 'all').toLowerCase();
+    const isAllActive = activeCat === 'all' || !activeCat;
 
     let html = `
       <li>
-        <div class="category-radio-btn ${currentFilters.category === 'all' ? 'active' : ''}" 
+        <div class="category-radio-btn ${isAllActive ? 'active' : ''}" 
+             data-slug="all"
              onclick="FilterEngine.setCategory('all')">
           <span>All Categories</span>
           <span class="count-badge">${products.length}</span>
@@ -98,11 +134,13 @@ const FilterEngine = (() => {
     `;
 
     categories.forEach(cat => {
-      const count = countMap[cat.slug] || 0;
-      const isActive = currentFilters.category === cat.slug;
+      const catSlug = (cat.slug || '').toLowerCase();
+      const count = countMap[catSlug] || 0;
+      const isActive = !isAllActive && (activeCat === catSlug || activeCat === (cat.name || '').toLowerCase());
       html += `
         <li>
           <div class="category-radio-btn ${isActive ? 'active' : ''}" 
+               data-slug="${escapeHtml(cat.slug)}"
                onclick="FilterEngine.setCategory('${escapeHtml(cat.slug)}')">
             <span>${cat.icon} ${escapeHtml(cat.name)}</span>
             <span class="count-badge">${count}</span>
@@ -115,16 +153,36 @@ const FilterEngine = (() => {
   }
 
   function setCategory(slug) {
-    currentFilters.category = slug;
-    updateUrlParam('category', slug === 'all' ? '' : slug);
+    const normalized = (slug || 'all').trim();
+    currentFilters.category = normalized;
 
-    // Update active class in sidebar
-    document.querySelectorAll('.category-radio-btn').forEach(btn => {
-      btn.classList.remove('active');
-    });
-    const clickedBtn = event.currentTarget || document.querySelector(`.category-radio-btn[onclick*="${slug}"]`);
-    if (clickedBtn) clickedBtn.classList.add('active');
+    try {
+      if (normalized && normalized !== 'all') {
+        sessionStorage.setItem('zm_selected_category', normalized);
+        localStorage.setItem('zm_selected_category', normalized);
+      } else {
+        sessionStorage.removeItem('zm_selected_category');
+        localStorage.removeItem('zm_selected_category');
+      }
+    } catch (e) {}
 
+    updateUrlParam('category', normalized === 'all' ? '' : normalized);
+
+    // Update hash for fallback persistence
+    if (window.history && window.history.replaceState) {
+      const hashVal = normalized === 'all' ? '' : `#${encodeURIComponent(normalized)}`;
+      const url = new URL(window.location);
+      if (normalized === 'all') {
+        url.searchParams.delete('category');
+      } else {
+        url.searchParams.set('category', normalized);
+      }
+      url.hash = hashVal;
+      window.history.replaceState({}, '', url.toString());
+    }
+
+    // Always re-render list to ensure exact active class assignment
+    renderCategoryFilterList();
     applyFilters(1); // Reset to page 1
   }
 
@@ -138,9 +196,16 @@ const FilterEngine = (() => {
 
     let filtered = [...allProductsCache];
 
-    // 1. Category Filter
+    // 1. Category Filter (normalized case-insensitive check)
     if (currentFilters.category && currentFilters.category !== 'all') {
-      filtered = filtered.filter(p => p.categorySlug === currentFilters.category);
+      const target = currentFilters.category.toLowerCase().trim();
+      filtered = filtered.filter(p => {
+        const pSlug = (p.categorySlug || '').toLowerCase();
+        const pCat = (p.category || '').toLowerCase();
+        const pGen = (typeof slugify === 'function' ? slugify(p.category || '') : '').toLowerCase();
+        return pSlug === target || pCat === target || pGen === target ||
+               pSlug.replace(/-/g, '') === target.replace(/-/g, '');
+      });
     }
 
     // 2. Search Filter
@@ -154,24 +219,16 @@ const FilterEngine = (() => {
       );
     }
 
-    // 3. Price Filter
-    if (currentFilters.maxPrice) {
-      filtered = filtered.filter(p => p.price <= currentFilters.maxPrice);
-    }
-
-    // 4. Sorting
+    // 3. Sorting
     switch (currentFilters.sortBy) {
-      case 'price-low':
-        filtered.sort((a, b) => a.price - b.price);
-        break;
-      case 'price-high':
-        filtered.sort((a, b) => b.price - a.price);
-        break;
       case 'newest':
         filtered.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
         break;
       case 'name':
         filtered.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case 'name-desc':
+        filtered.sort((a, b) => b.name.localeCompare(a.name));
         break;
       case 'popularity':
       default:
@@ -267,19 +324,31 @@ const FilterEngine = (() => {
     currentFilters.sortBy = 'popularity';
     currentFilters.page = 1;
 
+    try {
+      sessionStorage.removeItem('zm_selected_category');
+      localStorage.removeItem('zm_selected_category');
+    } catch (e) {}
+
     updateUrlParam('category', '');
     updateUrlParam('search', '');
     updateUrlParam('sort', '');
     updateUrlParam('page', 1);
 
+    if (window.history && window.history.replaceState) {
+      const url = new URL(window.location);
+      url.searchParams.delete('category');
+      url.searchParams.delete('search');
+      url.searchParams.delete('sort');
+      url.searchParams.set('page', '1');
+      url.hash = '';
+      window.history.replaceState({}, '', url.toString());
+    }
+
     const searchInput = document.getElementById('shop-search-input');
     if (searchInput) searchInput.value = '';
 
-    const priceSlider = document.getElementById('shop-price-slider');
-    if (priceSlider) priceSlider.value = 3500;
-
-    const priceDisplay = document.getElementById('shop-price-display');
-    if (priceDisplay) priceDisplay.textContent = formatPrice(3500);
+    const sortSelect = document.getElementById('shop-sort-select');
+    if (sortSelect) sortSelect.value = 'popularity';
 
     renderCategoryFilterList();
     applyFilters(1);

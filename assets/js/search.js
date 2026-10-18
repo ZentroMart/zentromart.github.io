@@ -106,14 +106,14 @@ const SearchEngine = (() => {
         : 'assets/images/placeholder.svg';
 
       html += `
-        <div class="search-suggestion-item" onclick="window.location.href='product.html?id=${encodeURIComponent(product.id)}'">
+        <div class="search-suggestion-item" onclick="try{sessionStorage.setItem('zm_selected_product_id','${escapeHtml(product.id)}');localStorage.setItem('zm_selected_product_id','${escapeHtml(product.id)}');}catch(e){} window.location.href='product.html?id=${encodeURIComponent(product.id)}#${encodeURIComponent(product.id)}'">
           <img src="${encodeURI(firstImage)}" alt="${escapeHtml(product.name)}" class="search-suggestion-thumb" onerror="handleImageError(this)">
           <div class="search-suggestion-info">
             <div class="search-suggestion-title">${escapeHtml(product.name)}</div>
             <div class="search-suggestion-meta">
               <span>${escapeHtml(product.category)}</span>
               <span>•</span>
-              <span class="search-suggestion-price">${formatPrice(product.price)}</span>
+              <span class="search-suggestion-badge" style="color:#15803d; font-weight:700;">20% OFF Launch Promo</span>
             </div>
           </div>
         </div>

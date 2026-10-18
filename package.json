@@ -1,0 +1,18 @@
+{
+  "name": "zentromart",
+  "version": "1.0.0",
+  "description": "ZentroMart — High-Performance Multi-Category E-Commerce Website",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "serve": "npx http-server . -p 8080 -o"
+  },
+  "keywords": [
+    "ecommerce",
+    "zentromart",
+    "static-site",
+    "whatsapp-checkout"
+  ],
+  "author": "ZentroMart",
+  "license": "ISC"
+}

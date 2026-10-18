@@ -73,11 +73,48 @@ function setStorage(key, value) {
 }
 
 /**
- * Get URL Query Parameters
+ * Safely slugify strings
+ */
+function slugify(text) {
+  if (!text) return '';
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+}
+
+/**
+ * Get URL Query Parameters (with hash fallback)
  */
 function getUrlParam(key) {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(key);
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const val = urlParams.get(key);
+    if (val) return val.trim();
+
+    // Check hash fallback e.g. #id=ZM-0001 or #ZM-0001
+    if (window.location.hash) {
+      const hashStr = window.location.hash.substring(1);
+      const hashParams = new URLSearchParams(hashStr);
+      const hashVal = hashParams.get(key);
+      if (hashVal) return hashVal.trim();
+
+      // If hash itself looks like a product ID (e.g. #ZM-0001)
+      if (key === 'id' && /^ZM-\d+/i.test(hashStr)) {
+        return hashStr.trim();
+      }
+
+      // If hash looks like a product slug or category slug
+      if ((key === 'slug' || key === 'category') && hashStr && !hashStr.includes('=')) {
+        return hashStr.trim();
+      }
+    }
+  } catch (err) {
+    console.warn('Error parsing URL parameter:', err);
+  }
+  return null;
 }
 
 /**

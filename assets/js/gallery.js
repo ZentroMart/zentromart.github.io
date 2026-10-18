@@ -49,6 +49,14 @@ const GalleryEngine = (() => {
           `;
         });
         thumbsContainer.innerHTML = html;
+
+        // Attach direct click listeners for maximum reliability
+        thumbsContainer.querySelectorAll('.gallery-thumb-btn').forEach((btn, idx) => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            setIndex(idx);
+          });
+        });
       }
     }
   }
@@ -58,9 +66,19 @@ const GalleryEngine = (() => {
       currentIndex = index;
       const mainImg = document.getElementById('gallery-main-img');
       if (mainImg) {
-        mainImg.style.opacity = '0.5';
-        mainImg.src = encodeURI(images[currentIndex]);
-        setTimeout(() => { mainImg.style.opacity = '1'; }, 100);
+        mainImg.style.transition = 'opacity 0.15s ease';
+        mainImg.style.opacity = '0.3';
+        const targetSrc = encodeURI(images[currentIndex]);
+        const temp = new Image();
+        temp.onload = () => {
+          mainImg.src = targetSrc;
+          mainImg.style.opacity = '1';
+        };
+        temp.onerror = () => {
+          mainImg.src = targetSrc;
+          mainImg.style.opacity = '1';
+        };
+        temp.src = targetSrc;
       }
 
       document.querySelectorAll('.gallery-thumb-btn').forEach((btn, idx) => {

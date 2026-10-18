@@ -14,6 +14,7 @@ const App = (() => {
     initBackToTop();
     initNewsletterForm();
     SearchEngine.initSearchInputs();
+    initGlobalLinkDelegation();
 
     // Route dispatcher based on page elements
     const pageId = document.body.dataset.page;
@@ -41,6 +42,39 @@ const App = (() => {
   function initBadges() {
     CartEngine.updateBadges();
     WishlistEngine.updateBadges();
+  }
+
+  function initGlobalLinkDelegation() {
+    document.addEventListener('click', (e) => {
+      // 1. Any category link
+      const catLink = e.target.closest('a[href*="category="]');
+      if (catLink) {
+        try {
+          const u = new URL(catLink.href, window.location.origin);
+          const cat = u.searchParams.get('category');
+          if (cat) {
+            sessionStorage.setItem('zm_selected_category', cat);
+            localStorage.setItem('zm_selected_category', cat);
+          }
+        } catch (err) {}
+      }
+
+      // 2. Any product link
+      const prodLink = e.target.closest('a[href*="product.html"], a[href*="/product"], [data-product-id]');
+      if (prodLink && !e.target.closest('button')) {
+        try {
+          let prodId = prodLink.dataset.productId;
+          if (!prodId && prodLink.href) {
+            const u = new URL(prodLink.href, window.location.origin);
+            prodId = u.searchParams.get('id');
+          }
+          if (prodId) {
+            sessionStorage.setItem('zm_selected_product_id', prodId);
+            localStorage.setItem('zm_selected_product_id', prodId);
+          }
+        } catch (err) {}
+      }
+    });
   }
 
   function initStickyHeader() {
@@ -129,9 +163,19 @@ const App = (() => {
     if (categoriesContainer) {
       let catHtml = '';
       categories.forEach(cat => {
-        const count = allProducts.filter(p => p.categorySlug === cat.slug).length;
+        const catSlug = (cat.slug || '').toLowerCase();
+        const count = allProducts.filter(p => {
+          const pSlug = (p.categorySlug || '').toLowerCase();
+          const pGen = (typeof slugify === 'function' ? slugify(p.category || '') : '').toLowerCase();
+          return pSlug === catSlug || pGen === catSlug;
+        }).length;
+        const targetUrl = `shop.html?category=${encodeURIComponent(cat.slug)}#${encodeURIComponent(cat.slug)}`;
+        const storeCat = `try{sessionStorage.setItem('zm_selected_category','${escapeHtml(cat.slug)}');localStorage.setItem('zm_selected_category','${escapeHtml(cat.slug)}');}catch(e){}`;
         catHtml += `
-          <a href="shop.html?category=${encodeURIComponent(cat.slug)}" class="category-card">
+          <a href="${targetUrl}" 
+             onclick="${storeCat}"
+             class="category-card" 
+             data-category-slug="${escapeHtml(cat.slug)}">
             <div class="category-icon">${cat.icon}</div>
             <div class="category-name">${escapeHtml(cat.name)}</div>
             <div class="category-count">${count} Products</div>
@@ -175,42 +219,67 @@ const App = (() => {
      Product Details Page Initializer
      ---------------------------------------------------- */
   async function initProductDetailPage() {
-    const idOrSlug = getUrlParam('id') || getUrlParam('slug');
+    let idOrSlug = getUrlParam('id') || getUrlParam('slug');
+    if (!idOrSlug && window.location.hash) {
+      const h = window.location.hash.substring(1).trim();
+      if (h) idOrSlug = h;
+    }
+    if (!idOrSlug) {
+      try {
+        idOrSlug = sessionStorage.getItem('zm_selected_product_id') || localStorage.getItem('zm_selected_product_id');
+      } catch (e) {}
+    }
+
     const container = document.getElementById('product-detail-wrapper');
     if (!container) return;
 
-    if (!idOrSlug) {
+    let product = await ProductEngine.getProductByIdOrSlug(idOrSlug);
+    if (!product) {
+      const all = await ProductEngine.getAllProducts();
+      product = all && all.length > 0 ? all[0] : null;
+    }
+
+    if (!product) {
       container.innerHTML = `
         <div class="empty-state-wrap">
-          <h2 class="empty-state-title">No Product Selected</h2>
-          <p class="empty-state-p">Please choose a product from our catalog to view complete details.</p>
+          <h2 class="empty-state-title">Loading Catalog...</h2>
+          <p class="empty-state-p">Please ensure catalog data is available.</p>
           <a href="shop.html" class="btn btn-primary btn-lg">Browse Shop</a>
         </div>
       `;
       return;
     }
 
-    const product = await ProductEngine.getProductByIdOrSlug(idOrSlug);
-    if (!product) {
-      container.innerHTML = `
-        <div class="empty-state-wrap">
-          <h2 class="empty-state-title">Product Not Found</h2>
-          <p class="empty-state-p">The requested product "${escapeHtml(idOrSlug)}" may have been moved or is currently unavailable.</p>
-          <a href="shop.html" class="btn btn-primary btn-lg">Return to Shop</a>
-        </div>
-      `;
-      return;
+    // Ensure session and local storage record this viewed product
+    try {
+      sessionStorage.setItem('zm_selected_product_id', product.id);
+      localStorage.setItem('zm_selected_product_id', product.id);
+    } catch (e) {}
+
+    // Update URL query / hash cleanly if on /product without query
+    if (!getUrlParam('id') && window.history && window.history.replaceState) {
+      try {
+        const canonicalUrl = `product.html?id=${encodeURIComponent(product.id)}#${encodeURIComponent(product.id)}`;
+        window.history.replaceState(null, '', canonicalUrl);
+      } catch (e) {}
     }
 
     // Update document title for SEO
     document.title = `${product.name} — Buy on WhatsApp | ZentroMart`;
 
     // Breadcrumbs
+    const catSlug = product.categorySlug || (product.category ? (typeof slugify === 'function' ? slugify(product.category) : product.category.toLowerCase().replace(/\s+/g, '-')) : 'all');
     const breadcrumbCategory = document.getElementById('breadcrumb-category');
     const breadcrumbTitle = document.getElementById('breadcrumb-product');
     if (breadcrumbCategory) {
       breadcrumbCategory.textContent = product.category;
-      breadcrumbCategory.href = `shop.html?category=${encodeURIComponent(product.categorySlug)}`;
+      breadcrumbCategory.href = `shop.html?category=${encodeURIComponent(catSlug)}#${encodeURIComponent(catSlug)}`;
+      breadcrumbCategory.onclick = () => {
+        try {
+          sessionStorage.setItem('zm_selected_category', catSlug);
+          localStorage.setItem('zm_selected_category', catSlug);
+        } catch (e) {}
+      };
     }
     if (breadcrumbTitle) {
       breadcrumbTitle.textContent = product.name;
@@ -222,8 +291,6 @@ const App = (() => {
     // Populate Product Information
     const titleEl = document.getElementById('product-detail-title');
     const skuEl = document.getElementById('product-detail-sku');
-    const currentPriceEl = document.getElementById('product-detail-current-price');
-    const origPriceEl = document.getElementById('product-detail-orig-price');
     const descEl = document.getElementById('product-detail-desc');
     const specsTableEl = document.getElementById('product-specs-table-body');
     const buyWaBtn = document.getElementById('btn-buy-whatsapp');
@@ -233,15 +300,6 @@ const App = (() => {
 
     if (titleEl) titleEl.textContent = product.name;
     if (skuEl) skuEl.textContent = `SKU: ${product.id}`;
-    if (currentPriceEl) currentPriceEl.textContent = formatPrice(product.price);
-    if (origPriceEl) {
-      if (product.originalPrice) {
-        origPriceEl.textContent = formatPrice(product.originalPrice);
-        origPriceEl.style.display = 'inline';
-      } else {
-        origPriceEl.style.display = 'none';
-      }
-    }
     if (descEl) descEl.textContent = product.description;
 
     // Specs
