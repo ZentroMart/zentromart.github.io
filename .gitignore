@@ -7,3 +7,4 @@ node_modules/
 create-repo.html
 github_user.json
 repo_result.json
+scripts/setup-user-pages.js
