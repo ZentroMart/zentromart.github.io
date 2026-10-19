@@ -50,7 +50,7 @@ const App = (() => {
       const catLink = e.target.closest('a[href*="category="]');
       if (catLink) {
         try {
-          const u = new URL(catLink.href, window.location.origin);
+          const u = new URL(catLink.href, window.location.href);
           const cat = u.searchParams.get('category');
           if (cat) {
             sessionStorage.setItem('zm_selected_category', cat);
@@ -65,7 +65,7 @@ const App = (() => {
         try {
           let prodId = prodLink.dataset.productId;
           if (!prodId && prodLink.href) {
-            const u = new URL(prodLink.href, window.location.origin);
+            const u = new URL(prodLink.href, window.location.href);
             prodId = u.searchParams.get('id');
           }
           if (prodId) {

@@ -168,13 +168,21 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    gap: 2.5rem;
   }
 }
 
 /* Tablets (769px - 1024px) */
 @media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .footer-col-about {
+    grid-column: 1 / -1;
+  }
+  
   .shop-layout {
     grid-template-columns: 1fr;
   }
@@ -365,7 +373,11 @@
   
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2.25rem;
+  }
+  
+  .footer-col-about {
+    grid-column: auto;
   }
   
   .cart-item-row {

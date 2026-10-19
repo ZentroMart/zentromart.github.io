@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "ZentroMart — High-Performance Multi-Category E-Commerce Website",
   "scripts": {
-    "start": "npx serve .",
-    "dev": "npx serve .",
-    "serve": "npx http-server . -p 8080 -o"
+    "start": "node scripts/server.js",
+    "dev": "node scripts/server.js",
+    "serve": "node scripts/server.js"
   },
   "keywords": [
     "ecommerce",

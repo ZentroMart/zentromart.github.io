@@ -41,19 +41,16 @@ http://localhost:8000/
 
 ---
 
-### Method 4: Node.js / npm
+### Method 4: Node.js (Zero Dependencies)
 Open your terminal in this directory and run:
-```cmd
-npx serve .
-```
-or
 ```cmd
 npm start
 ```
-Then open:
+or
+```cmd
+node scripts/server.js
 ```
-http://localhost:3000/
-```
+The server will start on port 3000 and automatically open your default browser.
 
 ---
 
@@ -128,12 +125,37 @@ ZentroMart/
 
 ---
 
+## 📊 Live Visitor Statistics System
+
+The website features an automated live visitor traffic analytics section in the footer tracking 4 key metrics:
+
+1. **Total Visitors**: All-time deduplicated unique visitors (identified via an anonymous browser UUID in `localStorage`).
+2. **Today's Visitors**: Unique visitors today, reset automatically at `00:00:00 PKT` (Pakistan Standard Time, UTC+5).
+3. **Online Visitors**: Currently active visitors calculated within a strict **10-seconds activity window**.
+4. **Total Page Views**: Total visits to the wholesale catalog.
+
+### Architecture & Configuration (`assets/js/visitor-counter-config.js`)
+
+- **Zero-Setup Mode (Default)**:
+  - Out-of-the-box persistent tracking using CountAPI (`https://countapi.mileshilliard.com/api/v1`) with local session presence across browser tabs.
+  - Requires **ZERO API keys, ZERO account registrations, and ZERO backend servers**.
+  - Deduplicated total unique visitors and date-keyed daily unique visitors reset automatically at midnight Pakistan time.
+
+- **Firebase Realtime Database Mode (Optional Free Tier)**:
+  - For multi-device, multi-user WebSocket live presence synchronization across different devices and browsers worldwide.
+  - To activate:
+    1. Open [`assets/js/visitor-counter-config.js`](file:///c:/Users/murtu/OneDrive/Desktop/ZentroMart/assets/js/visitor-counter-config.js).
+    2. Change `mode: 'firebase'` and set `firebase.enabled: true`.
+    3. Paste your free Google Firebase Realtime Database configuration into `firebase.config`.
+
+---
+
 ## 🌐 Deploying to GitHub Pages
 
 1. Initialize git and commit your files:
    ```bash
    git add .
-   git commit -m "Deploy ZentroMart"
+   git commit -m "Deploy ZentroMart with Live Visitor Statistics"
    git push origin main
    ```
 2. In your GitHub repository:
@@ -144,3 +166,4 @@ ZentroMart/
    ```
    https://<username>.github.io/<repo-name>/
    ```
+
